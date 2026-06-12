@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>内科护理学正高每日练习 · 2026-06-13</title>
+<style>
+:root{
+  --bg:#faf9f5;--surface:#ffffff;--surface2:#f1efe8;--text:#1f1e1c;--text2:#5f5e5a;--text3:#888780;
+  --border:rgba(0,0,0,.12);--border2:rgba(0,0,0,.22);
+  --info-bg:#e6f1fb;--info-tx:#0c447c;--ok-bg:#e1f5ee;--ok-tx:#0f6e56;
+  --warn-bg:#faeeda;--warn-tx:#854f0b;--danger-bg:#fcebeb;--danger-tx:#a32d2d;
+  --radius:12px;--radius-s:8px;
+  --font:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#1f1e1c;--surface:#2a2925;--surface2:#33322d;--text:#f5f3ee;--text2:#b4b2a9;--text3:#888780;
+    --border:rgba(255,255,255,.14);--border2:rgba(255,255,255,.26);
+    --info-bg:#0c447c;--info-tx:#b5d4f4;--ok-bg:#085041;--ok-tx:#9fe1cb;
+    --warn-bg:#633806;--warn-tx:#fac775;--danger-bg:#791f1f;--danger-tx:#f7c1c1;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.7;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:1.5rem 1.1rem 4rem}
+.head{margin:0 0 1.5rem}
+.head h1{font-size:20px;font-weight:500;margin:0 0 .3rem}
+.head .sub{font-size:13.5px;color:var(--text2);margin:0}
+.head .topic{display:inline-block;margin-top:.6rem;background:var(--info-bg);color:var(--info-tx);
+  font-size:13px;font-weight:500;padding:5px 12px;border-radius:var(--radius-s)}
+.card{background:var(--surface);border:.5px solid var(--border);border-radius:var(--radius);padding:1.25rem;margin-bottom:1rem}
+.card-tag{font-size:11.5px;font-weight:500;color:var(--text2);letter-spacing:.04em;margin:0 0 1rem;padding-bottom:.75rem;border-bottom:.5px solid var(--border)}
+.case-desc{background:var(--surface2);border-radius:var(--radius-s);padding:1rem 1.1rem;margin-bottom:1.25rem;font-size:13.5px;line-height:1.85}
+.case-desc strong{font-weight:500}
+.q-block{margin-bottom:1.5rem}.q-block:last-child{margin-bottom:0}
+.q-title{font-size:14.5px;font-weight:500;margin:0 0 .6rem;line-height:1.6}
+.q-num{color:var(--text2);font-weight:400}
+.opt{display:flex;align-items:flex-start;gap:9px;padding:7px 9px;border-radius:7px;margin:3px 0;cursor:pointer;font-size:14px;line-height:1.5;transition:background .1s}
+.opt:hover{background:var(--surface2)}
+.opt input{margin-top:3px;flex-shrink:0;width:16px;height:16px;accent-color:#378add}
+.opt.correct{background:var(--ok-bg)!important;color:var(--ok-tx)}
+.opt.wrong{background:var(--danger-bg)!important;color:var(--danger-tx)}
+.opt.missed{background:var(--warn-bg)!important;color:var(--warn-tx)}
+.opt.locked{pointer-events:none;cursor:default}
+.q-fb{font-size:13px;margin-top:6px;font-weight:500;display:none}
+.q-expl{font-size:13px;line-height:1.7;color:var(--text2);background:var(--surface2);border-radius:7px;padding:.75rem;margin-top:.6rem;display:none}
+.total-row{display:none;align-items:center;justify-content:space-between;background:var(--surface2);border-radius:var(--radius-s);padding:1rem 1.25rem;margin-top:.5rem}
+.total-label{font-size:14px;color:var(--text2)}
+.total-val{font-size:28px;font-weight:500}
+.btn-row{display:flex;gap:10px;margin-top:1.25rem}
+.btn-s,.btn-r{cursor:pointer;border-radius:var(--radius-s);font-size:14px;padding:10px 24px;font-weight:500;border:none}
+.btn-s{background:var(--info-bg);color:var(--info-tx)}
+.btn-s:hover{opacity:.85}
+.btn-r{background:none;color:var(--text2);border:.5px solid var(--border2);display:none}
+.btn-r:hover{background:var(--surface2)}
+.foot{text-align:center;font-size:12px;color:var(--text3);margin-top:2rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <h1>内科护理学正高每日练习</h1>
+    <p class="sub">2026-06-13 · 共 5 题（满分 5 分）</p>
+    <span class="topic">今日主题：呼吸系统——AECOPD与Ⅱ型呼吸衰竭护理</span>
+  </div>
+
+  <div class="card">
+    <p class="card-tag">第一部分 · 多选题（共2题 · 每题1分）｜全部选对方得满分，错选/漏选均得0分</p>
+    <div id="q1-wrap" class="q-block"></div>
+    <div id="q2-wrap" class="q-block"></div>
+  </div>
+
+  <div class="card">
+    <p class="card-tag">第二部分 · 案例分析题（共3题 · 每题1分）｜不定项：选对得分，错选倒扣，单题保底0分</p>
+    <div class="case-desc"><strong>【病例】</strong>张某，男，72岁，COPD病史18年，慢性肺源性心脏病史5年。因受凉后咳嗽咳黄痰加重5天、呼吸困难、双下肢水肿4天，嗜睡1天急诊入院。<br><strong>查体：</strong>T 38.2℃，P 106次/min，R 26次/min，BP 138/84 mmHg；神志嗜睡，口唇及指端发绀，颈静脉充盈，桶状胸，双肺可闻及哮鸣音及湿啰音，心界扩大，P₂＞A₂，双下肢凹陷性水肿（++）。<br><strong>辅助检查：</strong>WBC 13.4×10⁹/L，N% 88.3%；动脉血气（鼻导管吸氧2 L/min）：pH 7.31，PaO₂ 52 mmHg，PaCO₂ 74 mmHg，HCO₃⁻ 36 mmol/L，BE +4；BNP 1256 pg/mL；ECG：右心室肥大，肺型P波。</div>
+    <div id="q3-wrap" class="q-block"></div>
+    <div id="q4-wrap" class="q-block"></div>
+    <div id="q5-wrap" class="q-block"></div>
+  </div>
+
+  <div class="btn-row">
+    <button class="btn-s" id="btn-submit" onclick="doSubmit()">交卷评分</button>
+    <button class="btn-r" id="btn-report" onclick="reportFeishu()" style="display:none">上报成绩到飞书</button>
+    <button class="btn-r" id="btn-reset" onclick="doReset()">重做</button>
+  </div>
+  <div class="total-row" id="total-row">
+    <span class="total-label">本次总分</span>
+    <span class="total-val" id="total-val"></span>
+  </div>
+  <p class="foot">人民卫生出版社《内科护理学》及现行指南 · 每日自动生成</p>
+</div>
+
+<script>
+const Qs=[
+  {
+    "id": 1,
+    "type": "multi",
+    "num": "1",
+    "title": "关于AECOPD合并Ⅱ型呼吸衰竭患者的氧疗护理，正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "给予高流量高浓度氧疗（FiO₂＞60%），迅速纠正低氧血症"
+      },
+      {
+        "k": "B",
+        "t": "宜采用低流量控制性氧疗（1～2 L/min），目标SpO₂维持在88%～92%"
+      },
+      {
+        "k": "C",
+        "t": "无创正压通气（NPPV）适用于神志清醒、有自主呼吸、能配合的AECOPD急性加重患者"
+      },
+      {
+        "k": "D",
+        "t": "氧疗过程中须定期复查动脉血气，以评估疗效并指导参数调整"
+      },
+      {
+        "k": "E",
+        "t": "COPD患者呼吸驱动主要依赖PaCO₂升高，高浓度氧疗可削弱其呼吸驱动"
+      }
+    ],
+    "correct": [
+      "B",
+      "C",
+      "D"
+    ],
+    "expl": "B正确：Ⅱ型呼吸衰竭（高碳酸血症型）患者长期CO₂潴留，呼吸中枢对CO₂敏感性下降，依赖低氧刺激维持呼吸驱动；须控制性低流量氧疗，SpO₂目标88%～92%；C正确：NPPV（BiPAP模式）是AECOPD合并急性呼吸衰竭的一线通气支持，适于意识清醒、可配合者；D正确：定期血气分析是评价氧疗疗效、调整方案的金标准；A错误：高浓度氧疗会消除低氧驱动，加重CO₂潴留甚至诱发CO₂麻醉；E错误：COPD患者呼吸驱动依赖低PaO₂（低氧驱动），而非高PaCO₂——该选项机制表述相反，E与A对应的扣分依据相似，但E本身在机制上也是错误的。"
+  },
+  {
+    "id": 2,
+    "type": "multi",
+    "num": "2",
+    "title": "下列关于AECOPD急性期的护理措施，正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "协助患者取半坐卧位或端坐位，有助于减少膈肌上抬、降低呼吸做功"
+      },
+      {
+        "k": "B",
+        "t": "指导患者进行缩唇呼吸和腹式呼吸，改善通气效率"
+      },
+      {
+        "k": "C",
+        "t": "痰液黏稠者遵医嘱雾化吸入后，协助叩背排痰或使用机械辅助排痰"
+      },
+      {
+        "k": "D",
+        "t": "急性加重期应鼓励患者积极下床活动，以防呼吸肌废用性萎缩"
+      },
+      {
+        "k": "E",
+        "t": "遵医嘱使用短效β₂受体激动剂及抗胆碱能支气管扩张剂，并监测心率、心律等副作用"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "expl": "A正确：半卧/端坐位利用重力减轻膈肌负担，是改善呼吸困难的基本体位护理；B正确：缩唇呼吸延长呼气、减少动态气道陷闭；腹式呼吸增大潮气量，均是COPD稳定期及急性期辅助通气的核心技术；C正确：雾化稀释分泌物后结合叩背有助于气道廓清；E正确：β₂受体激动剂（SABA）及抗胆碱能药物（SAMA）为AECOPD一线支气管扩张治疗，须监测心率加快、心律失常等不良反应；D错误：急性加重期须绝对卧床休息以减少氧耗，康复活动应在病情稳定后逐步进行。"
+  },
+  {
+    "id": 3,
+    "type": "case",
+    "num": "3",
+    "title": "根据该患者动脉血气结果，其酸碱失衡类型及呼吸衰竭分型最可能是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "Ⅰ型呼吸衰竭合并代谢性酸中毒"
+      },
+      {
+        "k": "B",
+        "t": "单纯呼吸性酸中毒"
+      },
+      {
+        "k": "C",
+        "t": "Ⅱ型呼吸衰竭合并呼吸性酸中毒＋代偿性代谢性碱中毒（失代偿期）"
+      },
+      {
+        "k": "D",
+        "t": "呼吸性碱中毒合并代谢性碱中毒"
+      },
+      {
+        "k": "E",
+        "t": "Ⅱ型呼吸衰竭合并代谢性碱中毒（完全代偿）"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "expl": "该患者吸氧2 L/min下PaO₂ 52 mmHg（＜60 mmHg）、PaCO₂ 74 mmHg（＞50 mmHg），符合Ⅱ型呼吸衰竭诊断；pH 7.31（＜7.35）提示失代偿性酸中毒，PaCO₂↑为原发（呼吸性酸中毒）；HCO₃⁻ 36 mmol/L↑及BE +4为肾脏代偿性代谢性碱中毒，但代偿不充分（pH仍低于正常），故为失代偿期混合型，C正确。A错误：该患者有高碳酸血症，非Ⅰ型；B错误：HCO₃⁻明显升高提示同时存在代谢性碱中毒，非单纯呼酸；E错误：pH 7.31仍低于7.35，属失代偿期，非完全代偿。"
+  },
+  {
+    "id": 4,
+    "type": "case",
+    "num": "4",
+    "title": "医嘱予无创正压通气（NPPV/BiPAP），护士正确的护理措施是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "根据患者面型选合适口鼻面罩，固定带松紧以可插入1～2指为宜，避免漏气和面部压伤"
+      },
+      {
+        "k": "B",
+        "t": "上机初期守护床旁，观察漏气、腹胀、误吸等不良反应，指导患者与呼吸机同步"
+      },
+      {
+        "k": "C",
+        "t": "患者烦躁不配合时，立即给予地西泮10 mg肌注镇静后继续NPPV"
+      },
+      {
+        "k": "D",
+        "t": "禁止患者在NPPV期间任何形式进水，以防误吸"
+      },
+      {
+        "k": "E",
+        "t": "NPPV疗效判断指标包括：呼吸频率下降、辅助呼吸肌使用减少、SpO₂上升及血气pH/PaCO₂改善"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "E"
+    ],
+    "expl": "A正确：面罩选择与固定是防漏气及面部压力性损伤的关键护理操作；B正确：上机初期密切监护、指导人机配合是NPPV成功实施的重要保障；E正确：呼吸频率、辅助肌使用、SpO₂和血气是判断NPPV疗效的核心评价指标；C错误：苯二氮䓬类（地西泮）抑制自主呼吸驱动并降低气道保护性反射，AECOPD及Ⅱ型呼衰禁用；不配合时应先调整面罩舒适度、解释沟通，仍无效再由医生评估是否转有创通气；D错误：NPPV期间可间歇摘罩饮水，完全禁水影响依从性且无必要，实际护理允许少量、慢速饮水。"
+  },
+  {
+    "id": 5,
+    "type": "case",
+    "num": "5",
+    "title": "入院第3天，患者SpO₂持续下降至78%，神志由嗜睡转为昏迷，呼之不应，NPPV下PaCO₂升至96 mmHg，pH 7.18，护士应采取的措施正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "立即通知医生，评估有创机械通气指征，备气管插管用物（喉镜、导管、吸引器、简易呼吸球囊）"
+      },
+      {
+        "k": "B",
+        "t": "将NPPV压力参数调至最高档，延长NPPV时间，尽量避免气管插管"
+      },
+      {
+        "k": "C",
+        "t": "协助清除口腔及气道分泌物，保持气道通畅，同时给予经口面罩球囊辅助通气"
+      },
+      {
+        "k": "D",
+        "t": "确认或建立静脉通路，遵医嘱备好插管前镇静镇痛药物（如咪达唑仑、芬太尼）"
+      },
+      {
+        "k": "E",
+        "t": "密切监测生命体征及SpO₂，做好有创机械通气护理准备（管路固定、初始报警设置、预防VAP措施）"
+      }
+    ],
+    "correct": [
+      "A",
+      "C",
+      "D",
+      "E"
+    ],
+    "expl": "该患者出现NPPV失败指征：意识恶化至昏迷（气道保护能力丧失、无法配合）、PaCO₂进行性升高（96 mmHg）、严重失代偿性酸中毒（pH 7.18），须立即转有创机械通气；A正确：通知医生评估插管指征、备物是首要护理行动；C正确：插管前清除分泌物保证气道通畅，必要时球囊辅助通气维持氧合；D正确：插管须准备镇静镇痛药物（RSI方案），须提前建立通路备药；E正确：有创通气管理包括管路固定、参数/报警设置及VAP预防（床头抬高30°、口腔护理、声门下吸引等）；B错误：此时NPPV已失败，强行调高参数无益，且昏迷患者继续NPPV有误吸与通气不足双重风险，延误气管插管可危及生命。"
+  }
+];
+const QUIZ_DATE="2026-06-13";
+const QUIZ_TOPIC="呼吸系统——AECOPD与Ⅱ型呼吸衰竭护理";
+const FEISHU_FORM="https://dcnn82x31z7p.feishu.cn/share/base/form/shrcnBdV2GxPDcMoLoU3dupXsDb";
+let lastTotal=0, lastPer=[];
+
+function renderQ(q,wrapId){
+  const wrap=document.getElementById(wrapId);
+  let h=`<p class="q-title"><span class="q-num">${q.num}. </span>${q.title}</p>`;
+  q.opts.forEach(o=>{
+    h+=`<label class="opt" id="opt-${q.id}-${o.k}"><input type="checkbox" id="cb-${q.id}-${o.k}" value="${o.k}"><span><strong>${o.k}.</strong> ${o.t}</span></label>`;
+  });
+  h+=`<div class="q-fb" id="fb-${q.id}"></div><div class="q-expl" id="expl-${q.id}">【解析】${q.expl}</div>`;
+  wrap.innerHTML=h;
+}
+const wraps=['q1-wrap','q2-wrap','q3-wrap','q4-wrap','q5-wrap'];
+Qs.forEach((q,i)=>renderQ(q,wraps[i]));
+let done=false;
+function getSel(qid){return Qs.find(q=>q.id===qid).opts.filter(o=>document.getElementById('cb-'+qid+'-'+o.k).checked).map(o=>o.k);}
+function doSubmit(){
+  if(done)return;done=true;
+  document.getElementById('btn-submit').style.display='none';
+  document.getElementById('btn-reset').style.display='inline-block';
+  document.getElementById('btn-report').style.display='inline-block';
+  let total=0;const per=[];
+  Qs.forEach(q=>{
+    const sel=getSel(q.id),cor=q.correct;let qScore;
+    if(q.type==='multi'){const allRight=cor.every(k=>sel.includes(k))&&sel.every(k=>cor.includes(k));qScore=allRight?1:0;}
+    else{if(sel.length===0){qScore=0;}else{const w=1/cor.length;let s=0;sel.forEach(k=>{if(cor.includes(k))s+=w;else s-=w;});qScore=Math.max(0,s);}}
+    total+=qScore;per.push(Math.round(qScore*100)/100);
+    q.opts.forEach(o=>{
+      const el=document.getElementById('opt-'+q.id+'-'+o.k),cb=document.getElementById('cb-'+q.id+'-'+o.k);
+      cb.disabled=true;el.classList.add('locked');
+      const isCor=cor.includes(o.k),isSel=sel.includes(o.k);
+      if(isSel&&isCor)el.classList.add('correct');else if(isSel&&!isCor)el.classList.add('wrong');else if(!isSel&&isCor)el.classList.add('missed');
+    });
+    const fb=document.getElementById('fb-'+q.id);fb.style.display='block';
+    if(q.type==='multi'){fb.textContent=qScore===1?'✓ 得分 1 / 1':'✗ 得分 0 / 1（须全部选对）';fb.style.color=qScore===1?'var(--ok-tx)':'var(--danger-tx)';}
+    else{const disp=qScore.toFixed(2);fb.textContent=`得分 ${disp} / 1`;fb.style.color=qScore>=0.999?'var(--ok-tx)':qScore>0?'var(--warn-tx)':'var(--danger-tx)';}
+    document.getElementById('expl-'+q.id).style.display='block';
+  });
+  const tr=document.getElementById('total-row');tr.style.display='flex';
+  document.getElementById('total-val').textContent=total.toFixed(2)+' / 5';
+  lastTotal=total;lastPer=per;
+}
+function reportFeishu(){
+  if(!done){alert('请先交卷评分再上报');return;}
+  const u=FEISHU_FORM
+    +'?prefill_'+encodeURIComponent('日期')+'='+encodeURIComponent(QUIZ_DATE)
+    +'&prefill_'+encodeURIComponent('主题')+'='+encodeURIComponent(QUIZ_TOPIC)
+    +'&prefill_'+encodeURIComponent('总分')+'='+encodeURIComponent(lastTotal.toFixed(2))
+    +'&prefill_'+encodeURIComponent('各题得分')+'='+encodeURIComponent(lastPer.join(','));
+  if(typeof openLink==='function')openLink(u);else window.open(u,'_blank');
+}
+function doReset(){
+  done=false;
+  Qs.forEach(q=>{
+    q.opts.forEach(o=>{
+      const el=document.getElementById('opt-'+q.id+'-'+o.k),cb=document.getElementById('cb-'+q.id+'-'+o.k);
+      cb.checked=false;cb.disabled=false;el.classList.remove('correct','wrong','missed','locked');
+    });
+    document.getElementById('fb-'+q.id).style.display='none';
+    document.getElementById('expl-'+q.id).style.display='none';
+  });
+  document.getElementById('total-row').style.display='none';
+  document.getElementById('btn-submit').style.display='inline-block';
+  document.getElementById('btn-reset').style.display='none';
+  document.getElementById('btn-report').style.display='none';
+}
+</script>
+</body>
+</html>
