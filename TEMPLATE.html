@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>内科护理学正高每日练习 · {{DATE}}</title>
+<style>
+:root{
+  --bg:#faf9f5;--surface:#ffffff;--surface2:#f1efe8;--text:#1f1e1c;--text2:#5f5e5a;--text3:#888780;
+  --border:rgba(0,0,0,.12);--border2:rgba(0,0,0,.22);
+  --info-bg:#e6f1fb;--info-tx:#0c447c;--ok-bg:#e1f5ee;--ok-tx:#0f6e56;
+  --warn-bg:#faeeda;--warn-tx:#854f0b;--danger-bg:#fcebeb;--danger-tx:#a32d2d;
+  --radius:12px;--radius-s:8px;
+  --font:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#1f1e1c;--surface:#2a2925;--surface2:#33322d;--text:#f5f3ee;--text2:#b4b2a9;--text3:#888780;
+    --border:rgba(255,255,255,.14);--border2:rgba(255,255,255,.26);
+    --info-bg:#0c447c;--info-tx:#b5d4f4;--ok-bg:#085041;--ok-tx:#9fe1cb;
+    --warn-bg:#633806;--warn-tx:#fac775;--danger-bg:#791f1f;--danger-tx:#f7c1c1;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.7;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:1.5rem 1.1rem 4rem}
+.head{margin:0 0 1.5rem}
+.head h1{font-size:20px;font-weight:500;margin:0 0 .3rem}
+.head .sub{font-size:13.5px;color:var(--text2);margin:0}
+.head .topic{display:inline-block;margin-top:.6rem;background:var(--info-bg);color:var(--info-tx);
+  font-size:13px;font-weight:500;padding:5px 12px;border-radius:var(--radius-s)}
+.card{background:var(--surface);border:.5px solid var(--border);border-radius:var(--radius);padding:1.25rem;margin-bottom:1rem}
+.card-tag{font-size:11.5px;font-weight:500;color:var(--text2);letter-spacing:.04em;margin:0 0 1rem;padding-bottom:.75rem;border-bottom:.5px solid var(--border)}
+.case-desc{background:var(--surface2);border-radius:var(--radius-s);padding:1rem 1.1rem;margin-bottom:1.25rem;font-size:13.5px;line-height:1.85}
+.case-desc strong{font-weight:500}
+.q-block{margin-bottom:1.5rem}.q-block:last-child{margin-bottom:0}
+.q-title{font-size:14.5px;font-weight:500;margin:0 0 .6rem;line-height:1.6}
+.q-num{color:var(--text2);font-weight:400}
+.opt{display:flex;align-items:flex-start;gap:9px;padding:7px 9px;border-radius:7px;margin:3px 0;cursor:pointer;font-size:14px;line-height:1.5;transition:background .1s}
+.opt:hover{background:var(--surface2)}
+.opt input{margin-top:3px;flex-shrink:0;width:16px;height:16px;accent-color:#378add}
+.opt.correct{background:var(--ok-bg)!important;color:var(--ok-tx)}
+.opt.wrong{background:var(--danger-bg)!important;color:var(--danger-tx)}
+.opt.missed{background:var(--warn-bg)!important;color:var(--warn-tx)}
+.opt.locked{pointer-events:none;cursor:default}
+.q-fb{font-size:13px;margin-top:6px;font-weight:500;display:none}
+.q-expl{font-size:13px;line-height:1.7;color:var(--text2);background:var(--surface2);border-radius:7px;padding:.75rem;margin-top:.6rem;display:none}
+.total-row{display:none;align-items:center;justify-content:space-between;background:var(--surface2);border-radius:var(--radius-s);padding:1rem 1.25rem;margin-top:.5rem}
+.total-label{font-size:14px;color:var(--text2)}
+.total-val{font-size:28px;font-weight:500}
+.btn-row{display:flex;gap:10px;margin-top:1.25rem}
+.btn-s,.btn-r{cursor:pointer;border-radius:var(--radius-s);font-size:14px;padding:10px 24px;font-weight:500;border:none}
+.btn-s{background:var(--info-bg);color:var(--info-tx)}
+.btn-s:hover{opacity:.85}
+.btn-r{background:none;color:var(--text2);border:.5px solid var(--border2);display:none}
+.btn-r:hover{background:var(--surface2)}
+.foot{text-align:center;font-size:12px;color:var(--text3);margin-top:2rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <h1>内科护理学正高每日练习</h1>
+    <p class="sub">{{DATE}} · 共 5 题（满分 5 分）</p>
+    <span class="topic">今日主题：{{TOPIC}}</span>
+  </div>
+
+  <div class="card">
+    <p class="card-tag">第一部分 · 多选题（共2题 · 每题1分）｜全部选对方得满分，错选/漏选均得0分</p>
+    <div id="q1-wrap" class="q-block"></div>
+    <div id="q2-wrap" class="q-block"></div>
+  </div>
+
+  <div class="card">
+    <p class="card-tag">第二部分 · 案例分析题（共3题 · 每题1分）｜不定项：选对得分，错选倒扣，单题保底0分</p>
+    <div class="case-desc">{{CASE_DESC_HTML}}</div>
+    <div id="q3-wrap" class="q-block"></div>
+    <div id="q4-wrap" class="q-block"></div>
+    <div id="q5-wrap" class="q-block"></div>
+  </div>
+
+  <div class="btn-row">
+    <button class="btn-s" id="btn-submit" onclick="doSubmit()">交卷评分</button>
+    <button class="btn-r" id="btn-reset" onclick="doReset()">重做</button>
+  </div>
+  <div class="total-row" id="total-row">
+    <span class="total-label">本次总分</span>
+    <span class="total-val" id="total-val"></span>
+  </div>
+  <p class="foot">人民卫生出版社《内科护理学》及现行指南 · 每日自动生成</p>
+</div>
+
+<script>
+const Qs={{QS_JSON}};
+
+function renderQ(q,wrapId){
+  const wrap=document.getElementById(wrapId);
+  let h=`<p class="q-title"><span class="q-num">${q.num}. </span>${q.title}</p>`;
+  q.opts.forEach(o=>{
+    h+=`<label class="opt" id="opt-${q.id}-${o.k}"><input type="checkbox" id="cb-${q.id}-${o.k}" value="${o.k}"><span><strong>${o.k}.</strong> ${o.t}</span></label>`;
+  });
+  h+=`<div class="q-fb" id="fb-${q.id}"></div><div class="q-expl" id="expl-${q.id}">【解析】${q.expl}</div>`;
+  wrap.innerHTML=h;
+}
+const wraps=['q1-wrap','q2-wrap','q3-wrap','q4-wrap','q5-wrap'];
+Qs.forEach((q,i)=>renderQ(q,wraps[i]));
+let done=false;
+function getSel(qid){return Qs.find(q=>q.id===qid).opts.filter(o=>document.getElementById('cb-'+qid+'-'+o.k).checked).map(o=>o.k);}
+function doSubmit(){
+  if(done)return;done=true;
+  document.getElementById('btn-submit').style.display='none';
+  document.getElementById('btn-reset').style.display='inline-block';
+  let total=0;
+  Qs.forEach(q=>{
+    const sel=getSel(q.id),cor=q.correct;let qScore;
+    if(q.type==='multi'){const allRight=cor.every(k=>sel.includes(k))&&sel.every(k=>cor.includes(k));qScore=allRight?1:0;}
+    else{if(sel.length===0){qScore=0;}else{const w=1/cor.length;let s=0;sel.forEach(k=>{if(cor.includes(k))s+=w;else s-=w;});qScore=Math.max(0,s);}}
+    total+=qScore;
+    q.opts.forEach(o=>{
+      const el=document.getElementById('opt-'+q.id+'-'+o.k),cb=document.getElementById('cb-'+q.id+'-'+o.k);
+      cb.disabled=true;el.classList.add('locked');
+      const isCor=cor.includes(o.k),isSel=sel.includes(o.k);
+      if(isSel&&isCor)el.classList.add('correct');else if(isSel&&!isCor)el.classList.add('wrong');else if(!isSel&&isCor)el.classList.add('missed');
+    });
+    const fb=document.getElementById('fb-'+q.id);fb.style.display='block';
+    if(q.type==='multi'){fb.textContent=qScore===1?'✓ 得分 1 / 1':'✗ 得分 0 / 1（须全部选对）';fb.style.color=qScore===1?'var(--ok-tx)':'var(--danger-tx)';}
+    else{const disp=qScore.toFixed(2);fb.textContent=`得分 ${disp} / 1`;fb.style.color=qScore>=0.999?'var(--ok-tx)':qScore>0?'var(--warn-tx)':'var(--danger-tx)';}
+    document.getElementById('expl-'+q.id).style.display='block';
+  });
+  const tr=document.getElementById('total-row');tr.style.display='flex';
+  document.getElementById('total-val').textContent=total.toFixed(2)+' / 5';
+}
+function doReset(){
+  done=false;
+  Qs.forEach(q=>{
+    q.opts.forEach(o=>{
+      const el=document.getElementById('opt-'+q.id+'-'+o.k),cb=document.getElementById('cb-'+q.id+'-'+o.k);
+      cb.checked=false;cb.disabled=false;el.classList.remove('correct','wrong','missed','locked');
+    });
+    document.getElementById('fb-'+q.id).style.display='none';
+    document.getElementById('expl-'+q.id).style.display='none';
+  });
+  document.getElementById('total-row').style.display='none';
+  document.getElementById('btn-submit').style.display='inline-block';
+  document.getElementById('btn-reset').style.display='none';
+}
+</script>
+</body>
+</html>

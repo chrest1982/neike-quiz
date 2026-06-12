@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>内科护理学正高每日练习 · 2026-06-12</title>
+<style>
+:root{
+  --bg:#faf9f5;--surface:#ffffff;--surface2:#f1efe8;--text:#1f1e1c;--text2:#5f5e5a;--text3:#888780;
+  --border:rgba(0,0,0,.12);--border2:rgba(0,0,0,.22);
+  --info-bg:#e6f1fb;--info-tx:#0c447c;--ok-bg:#e1f5ee;--ok-tx:#0f6e56;
+  --warn-bg:#faeeda;--warn-tx:#854f0b;--danger-bg:#fcebeb;--danger-tx:#a32d2d;
+  --radius:12px;--radius-s:8px;
+  --font:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#1f1e1c;--surface:#2a2925;--surface2:#33322d;--text:#f5f3ee;--text2:#b4b2a9;--text3:#888780;
+    --border:rgba(255,255,255,.14);--border2:rgba(255,255,255,.26);
+    --info-bg:#0c447c;--info-tx:#b5d4f4;--ok-bg:#085041;--ok-tx:#9fe1cb;
+    --warn-bg:#633806;--warn-tx:#fac775;--danger-bg:#791f1f;--danger-tx:#f7c1c1;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.7;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:1.5rem 1.1rem 4rem}
+.head{margin:0 0 1.5rem}
+.head h1{font-size:20px;font-weight:500;margin:0 0 .3rem}
+.head .sub{font-size:13.5px;color:var(--text2);margin:0}
+.head .topic{display:inline-block;margin-top:.6rem;background:var(--info-bg);color:var(--info-tx);
+  font-size:13px;font-weight:500;padding:5px 12px;border-radius:var(--radius-s)}
+.card{background:var(--surface);border:.5px solid var(--border);border-radius:var(--radius);padding:1.25rem;margin-bottom:1rem}
+.card-tag{font-size:11.5px;font-weight:500;color:var(--text2);letter-spacing:.04em;margin:0 0 1rem;padding-bottom:.75rem;border-bottom:.5px solid var(--border)}
+.case-desc{background:var(--surface2);border-radius:var(--radius-s);padding:1rem 1.1rem;margin-bottom:1.25rem;font-size:13.5px;line-height:1.85}
+.case-desc strong{font-weight:500}
+.q-block{margin-bottom:1.5rem}.q-block:last-child{margin-bottom:0}
+.q-title{font-size:14.5px;font-weight:500;margin:0 0 .6rem;line-height:1.6}
+.q-num{color:var(--text2);font-weight:400}
+.opt{display:flex;align-items:flex-start;gap:9px;padding:7px 9px;border-radius:7px;margin:3px 0;cursor:pointer;font-size:14px;line-height:1.5;transition:background .1s}
+.opt:hover{background:var(--surface2)}
+.opt input{margin-top:3px;flex-shrink:0;width:16px;height:16px;accent-color:#378add}
+.opt.correct{background:var(--ok-bg)!important;color:var(--ok-tx)}
+.opt.wrong{background:var(--danger-bg)!important;color:var(--danger-tx)}
+.opt.missed{background:var(--warn-bg)!important;color:var(--warn-tx)}
+.opt.locked{pointer-events:none;cursor:default}
+.q-fb{font-size:13px;margin-top:6px;font-weight:500;display:none}
+.q-expl{font-size:13px;line-height:1.7;color:var(--text2);background:var(--surface2);border-radius:7px;padding:.75rem;margin-top:.6rem;display:none}
+.total-row{display:none;align-items:center;justify-content:space-between;background:var(--surface2);border-radius:var(--radius-s);padding:1rem 1.25rem;margin-top:.5rem}
+.total-label{font-size:14px;color:var(--text2)}
+.total-val{font-size:28px;font-weight:500}
+.btn-row{display:flex;gap:10px;margin-top:1.25rem}
+.btn-s,.btn-r{cursor:pointer;border-radius:var(--radius-s);font-size:14px;padding:10px 24px;font-weight:500;border:none}
+.btn-s{background:var(--info-bg);color:var(--info-tx)}
+.btn-s:hover{opacity:.85}
+.btn-r{background:none;color:var(--text2);border:.5px solid var(--border2);display:none}
+.btn-r:hover{background:var(--surface2)}
+.foot{text-align:center;font-size:12px;color:var(--text3);margin-top:2rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <h1>内科护理学正高每日练习</h1>
+    <p class="sub">2026-06-12 · 共 5 题（满分 5 分）</p>
+    <span class="topic">今日主题：消化系统——肝硬化并发症（上消化道出血与肝性脑病）</span>
+  </div>
+
+  <div class="card">
+    <p class="card-tag">第一部分 · 多选题（共2题 · 每题1分）｜全部选对方得满分，错选/漏选均得0分</p>
+    <div id="q1-wrap" class="q-block"></div>
+    <div id="q2-wrap" class="q-block"></div>
+  </div>
+
+  <div class="card">
+    <p class="card-tag">第二部分 · 案例分析题（共3题 · 每题1分）｜不定项：选对得分，错选倒扣，单题保底0分</p>
+    <div class="case-desc"><strong>【病例】</strong>王某，男，58岁，乙型病毒性肝炎肝硬化病史12年，因"突发呕血约500 mL、黑便3次"急诊入院。<br><strong>查体：</strong>T 36.8℃，BP 78/50 mmHg，HR 126次/min，R 22次/min；神志尚清，面色苍白，四肢厥冷；腹壁静脉曲张（+），脾肋下4 cm，移动性浊音（+）。<br><strong>辅助检查：</strong>Hb 62 g/L，PLT 48×10⁹/L，PT 19 s（参考11~13 s），血氨 58 μmol/L，白蛋白 24 g/L，TBil 52.3 μmol/L，Child-Pugh 12分（C级）。急诊胃镜：食管中下段静脉曲张（F3级），活动性渗血。</div>
+    <div id="q3-wrap" class="q-block"></div>
+    <div id="q4-wrap" class="q-block"></div>
+    <div id="q5-wrap" class="q-block"></div>
+  </div>
+
+  <div class="btn-row">
+    <button class="btn-s" id="btn-submit" onclick="doSubmit()">交卷评分</button>
+    <button class="btn-r" id="btn-reset" onclick="doReset()">重做</button>
+  </div>
+  <div class="total-row" id="total-row">
+    <span class="total-label">本次总分</span>
+    <span class="total-val" id="total-val"></span>
+  </div>
+  <p class="foot">人民卫生出版社《内科护理学》及现行指南 · 每日自动生成</p>
+</div>
+
+<script>
+const Qs=[
+  {
+    "id": 1,
+    "type": "multi",
+    "num": "1",
+    "title": "关于肝硬化食管-胃底静脉曲张破裂出血的急救护理，正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "立即建立两条以上静脉通路，快速补液输血"
+      },
+      {
+        "k": "B",
+        "t": "取平卧位，头偏向一侧，保持气道通畅，防止误吸"
+      },
+      {
+        "k": "C",
+        "t": "三腔二囊管置入后每8~12 h需放气减压一次，防止黏膜坏死"
+      },
+      {
+        "k": "D",
+        "t": "出血期间鼓励患者进食流质以补充体力"
+      },
+      {
+        "k": "E",
+        "t": "生长抑素（或奥曲肽）可降低门静脉压力，为首选血管活性药物"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "expl": "A正确：大出血须快速建立两条通路补充血容量；B正确：平卧头偏防止误吸窒息；C正确：气囊持续压迫可致缺血坏死，须每8~12 h减压约30 min；D错误：出血期间须禁食（NPO），进食会加重出血；E正确：生长抑素/奥曲肽为食管静脉曲张出血一线血管活性药物，可降低门静脉压力减少出血。"
+  },
+  {
+    "id": 2,
+    "type": "multi",
+    "num": "2",
+    "title": "下列关于肝性脑病的护理措施，正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "急性发作期暂禁蛋白质摄入，意识恢复后以植物蛋白为主逐渐增加"
+      },
+      {
+        "k": "B",
+        "t": "口服或灌肠乳果糖可酸化肠道，减少氨的吸收"
+      },
+      {
+        "k": "C",
+        "t": "昏迷患者清洁灌肠应使用肥皂水，清洁效果更彻底"
+      },
+      {
+        "k": "D",
+        "t": "患者烦躁时应避免使用苯二氮䓬类镇静药"
+      },
+      {
+        "k": "E",
+        "t": "谵妄躁动患者需加床栏保护，防止坠床，每2 h翻身一次预防压力性损伤"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "expl": "A正确：急性期限制蛋白，以植物蛋白为主（产氨少），意识恢复后逐步增加；B正确：乳果糖分解为乳酸和醋酸，降低肠道pH，减少NH₃吸收；C错误：肝性脑病灌肠禁用碱性液（肥皂水），碱性环境促进NH₃吸收加重脑病，应使用生理盐水或弱酸性溶液；D正确：苯二氮䓬类经肝代谢，肝性脑病时禁用，可加重神志障碍；E正确：安全防护防止坠床及压力性损伤。"
+  },
+  {
+    "id": 3,
+    "type": "case",
+    "num": "3",
+    "title": "该患者入院时最优先处理的护理问题是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "体液不足：与大量失血致有效循环血量减少有关"
+      },
+      {
+        "k": "B",
+        "t": "有窒息的危险：与呕血量大、误吸有关"
+      },
+      {
+        "k": "C",
+        "t": "营养失调：低于机体需要量，与长期肝硬化、急性出血有关"
+      },
+      {
+        "k": "D",
+        "t": "自我形象紊乱：与腹壁静脉曲张外观改变有关"
+      },
+      {
+        "k": "E",
+        "t": "活动无耐力：与贫血、营养不良有关"
+      }
+    ],
+    "correct": [
+      "A",
+      "B"
+    ],
+    "expl": "A、B正确：该患者BP 78/50 mmHg、HR 126次/min，已处于失血性休克状态，体液不足直接危及生命；同时大量呕血存在高度误吸窒息风险——两者均为威胁生命的紧急护理问题，须优先处理。C虽重要，但急救阶段并非首要；D、E均为非紧迫护理诊断，不属于\"最优先\"范畴。"
+  },
+  {
+    "id": 4,
+    "type": "case",
+    "num": "4",
+    "title": "医嘱给予三腔二囊管压迫止血，以下护理措施正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "置管前充分润滑管道，向患者说明目的，取得配合"
+      },
+      {
+        "k": "B",
+        "t": "先向胃气囊注气200~300 mL并向外牵引固定，再向食管气囊注气100~200 mL"
+      },
+      {
+        "k": "C",
+        "t": "气囊持续充气无需减压，以保持持续压迫止血效果"
+      },
+      {
+        "k": "D",
+        "t": "放气后观察24 h无再出血，拔管前口服液状石蜡10~20 mL后缓慢拔出"
+      },
+      {
+        "k": "E",
+        "t": "床旁备剪刀，若患者突发呼吸困难，立即剪断管道并拔出"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "expl": "A正确：操作前充分准备和沟通是基本护理原则；B正确：操作步骤正确，先充胃气囊固定并止血，再充食管气囊进一步压迫；C错误：持续压迫导致黏膜缺血坏死，须每8~12 h放气减压约30 min；D正确：放气后观察24 h无出血方可拔管，拔管前服液状石蜡润滑食管黏膜；E正确：气囊上滑入气道可致窒息，床旁备剪刀为标准应急规范。"
+  },
+  {
+    "id": 5,
+    "type": "case",
+    "num": "5",
+    "title": "入院第3天，患者出现表情淡漠、言语含糊、扑翼样震颤（+），定向力障碍，血氨124 μmol/L，诊断肝性脑病Ⅱ期。下列护理措施正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "暂禁蛋白质饮食，症状改善后从植物蛋白20 g/d逐渐增加至1 g/(kg·d)"
+      },
+      {
+        "k": "B",
+        "t": "遵医嘱乳果糖口服，或以乳果糖稀释液清洁灌肠"
+      },
+      {
+        "k": "C",
+        "t": "为减轻躁动，给予地西泮10 mg肌注镇静"
+      },
+      {
+        "k": "D",
+        "t": "遵医嘱给予精氨酸或谷氨酸钠静脉滴注以降低血氨"
+      },
+      {
+        "k": "E",
+        "t": "加床栏保护，谵妄躁动者适当约束四肢，每2 h翻身一次预防压力性损伤"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "expl": "A正确：限制蛋白摄入是肝性脑病基础治疗，以植物蛋白为主逐步恢复；B正确：乳果糖口服或清洁灌肠均可，酸化肠道减少氨吸收（该案例血氨124 μmol/L，急需降氨）；C错误：苯二氮䓬类（地西泮）经肝代谢，肝性脑病禁用，加重脑病，躁动可选氟哌啶醇；D正确：精氨酸/谷氨酸钠参与尿素循环，与氨结合降低血氨浓度；E正确：安全防护防止坠床及压力性损伤。"
+  }
+];
+
+function renderQ(q,wrapId){
+  const wrap=document.getElementById(wrapId);
+  let h=`<p class="q-title"><span class="q-num">${q.num}. </span>${q.title}</p>`;
+  q.opts.forEach(o=>{
+    h+=`<label class="opt" id="opt-${q.id}-${o.k}"><input type="checkbox" id="cb-${q.id}-${o.k}" value="${o.k}"><span><strong>${o.k}.</strong> ${o.t}</span></label>`;
+  });
+  h+=`<div class="q-fb" id="fb-${q.id}"></div><div class="q-expl" id="expl-${q.id}">【解析】${q.expl}</div>`;
+  wrap.innerHTML=h;
+}
+const wraps=['q1-wrap','q2-wrap','q3-wrap','q4-wrap','q5-wrap'];
+Qs.forEach((q,i)=>renderQ(q,wraps[i]));
+let done=false;
+function getSel(qid){return Qs.find(q=>q.id===qid).opts.filter(o=>document.getElementById('cb-'+qid+'-'+o.k).checked).map(o=>o.k);}
+function doSubmit(){
+  if(done)return;done=true;
+  document.getElementById('btn-submit').style.display='none';
+  document.getElementById('btn-reset').style.display='inline-block';
+  let total=0;
+  Qs.forEach(q=>{
+    const sel=getSel(q.id),cor=q.correct;let qScore;
+    if(q.type==='multi'){const allRight=cor.every(k=>sel.includes(k))&&sel.every(k=>cor.includes(k));qScore=allRight?1:0;}
+    else{if(sel.length===0){qScore=0;}else{const w=1/cor.length;let s=0;sel.forEach(k=>{if(cor.includes(k))s+=w;else s-=w;});qScore=Math.max(0,s);}}
+    total+=qScore;
+    q.opts.forEach(o=>{
+      const el=document.getElementById('opt-'+q.id+'-'+o.k),cb=document.getElementById('cb-'+q.id+'-'+o.k);
+      cb.disabled=true;el.classList.add('locked');
+      const isCor=cor.includes(o.k),isSel=sel.includes(o.k);
+      if(isSel&&isCor)el.classList.add('correct');else if(isSel&&!isCor)el.classList.add('wrong');else if(!isSel&&isCor)el.classList.add('missed');
+    });
+    const fb=document.getElementById('fb-'+q.id);fb.style.display='block';
+    if(q.type==='multi'){fb.textContent=qScore===1?'✓ 得分 1 / 1':'✗ 得分 0 / 1（须全部选对）';fb.style.color=qScore===1?'var(--ok-tx)':'var(--danger-tx)';}
+    else{const disp=qScore.toFixed(2);fb.textContent=`得分 ${disp} / 1`;fb.style.color=qScore>=0.999?'var(--ok-tx)':qScore>0?'var(--warn-tx)':'var(--danger-tx)';}
+    document.getElementById('expl-'+q.id).style.display='block';
+  });
+  const tr=document.getElementById('total-row');tr.style.display='flex';
+  document.getElementById('total-val').textContent=total.toFixed(2)+' / 5';
+}
+function doReset(){
+  done=false;
+  Qs.forEach(q=>{
+    q.opts.forEach(o=>{
+      const el=document.getElementById('opt-'+q.id+'-'+o.k),cb=document.getElementById('cb-'+q.id+'-'+o.k);
+      cb.checked=false;cb.disabled=false;el.classList.remove('correct','wrong','missed','locked');
+    });
+    document.getElementById('fb-'+q.id).style.display='none';
+    document.getElementById('expl-'+q.id).style.display='none';
+  });
+  document.getElementById('total-row').style.display='none';
+  document.getElementById('btn-submit').style.display='inline-block';
+  document.getElementById('btn-reset').style.display='none';
+}
+</script>
+</body>
+</html>
