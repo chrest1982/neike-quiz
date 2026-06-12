@@ -82,6 +82,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);lin
 
   <div class="btn-row">
     <button class="btn-s" id="btn-submit" onclick="doSubmit()">交卷评分</button>
+    <button class="btn-r" id="btn-report" onclick="reportFeishu()" style="display:none">上报成绩到飞书</button>
     <button class="btn-r" id="btn-reset" onclick="doReset()">重做</button>
   </div>
   <div class="total-row" id="total-row">
@@ -267,6 +268,10 @@ const Qs=[
     "expl": "A正确：限制蛋白摄入是肝性脑病基础治疗，以植物蛋白为主逐步恢复；B正确：乳果糖口服或清洁灌肠均可，酸化肠道减少氨吸收（该案例血氨124 μmol/L，急需降氨）；C错误：苯二氮䓬类（地西泮）经肝代谢，肝性脑病禁用，加重脑病，躁动可选氟哌啶醇；D正确：精氨酸/谷氨酸钠参与尿素循环，与氨结合降低血氨浓度；E正确：安全防护防止坠床及压力性损伤。"
   }
 ];
+const QUIZ_DATE="2026-06-12";
+const QUIZ_TOPIC="消化系统——肝硬化并发症（上消化道出血与肝性脑病）";
+const FEISHU_FORM="https://dcnn82x31z7p.feishu.cn/share/base/form/shrcnBdV2GxPDcMoLoU3dupXsDb";
+let lastTotal=0, lastPer=[];
 
 function renderQ(q,wrapId){
   const wrap=document.getElementById(wrapId);
@@ -285,12 +290,13 @@ function doSubmit(){
   if(done)return;done=true;
   document.getElementById('btn-submit').style.display='none';
   document.getElementById('btn-reset').style.display='inline-block';
-  let total=0;
+  document.getElementById('btn-report').style.display='inline-block';
+  let total=0;const per=[];
   Qs.forEach(q=>{
     const sel=getSel(q.id),cor=q.correct;let qScore;
     if(q.type==='multi'){const allRight=cor.every(k=>sel.includes(k))&&sel.every(k=>cor.includes(k));qScore=allRight?1:0;}
     else{if(sel.length===0){qScore=0;}else{const w=1/cor.length;let s=0;sel.forEach(k=>{if(cor.includes(k))s+=w;else s-=w;});qScore=Math.max(0,s);}}
-    total+=qScore;
+    total+=qScore;per.push(Math.round(qScore*100)/100);
     q.opts.forEach(o=>{
       const el=document.getElementById('opt-'+q.id+'-'+o.k),cb=document.getElementById('cb-'+q.id+'-'+o.k);
       cb.disabled=true;el.classList.add('locked');
@@ -304,6 +310,16 @@ function doSubmit(){
   });
   const tr=document.getElementById('total-row');tr.style.display='flex';
   document.getElementById('total-val').textContent=total.toFixed(2)+' / 5';
+  lastTotal=total;lastPer=per;
+}
+function reportFeishu(){
+  if(!done){alert('请先交卷评分再上报');return;}
+  const u=FEISHU_FORM
+    +'?prefill_'+encodeURIComponent('日期')+'='+encodeURIComponent(QUIZ_DATE)
+    +'&prefill_'+encodeURIComponent('主题')+'='+encodeURIComponent(QUIZ_TOPIC)
+    +'&prefill_'+encodeURIComponent('总分')+'='+encodeURIComponent(lastTotal.toFixed(2))
+    +'&prefill_'+encodeURIComponent('各题得分')+'='+encodeURIComponent(lastPer.join(','));
+  if(typeof openLink==='function')openLink(u);else window.open(u,'_blank');
 }
 function doReset(){
   done=false;
@@ -318,6 +334,7 @@ function doReset(){
   document.getElementById('total-row').style.display='none';
   document.getElementById('btn-submit').style.display='inline-block';
   document.getElementById('btn-reset').style.display='none';
+  document.getElementById('btn-report').style.display='none';
 }
 </script>
 </body>
