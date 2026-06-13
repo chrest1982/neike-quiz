@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>内科护理学正高每日练习 · 2026-06-13</title>
+<style>
+:root{
+  --bg:#faf9f5;--surface:#ffffff;--surface2:#f1efe8;--text:#1f1e1c;--text2:#5f5e5a;--text3:#888780;
+  --border:rgba(0,0,0,.12);--border2:rgba(0,0,0,.22);
+  --info-bg:#e6f1fb;--info-tx:#0c447c;--ok-bg:#e1f5ee;--ok-tx:#0f6e56;
+  --warn-bg:#faeeda;--warn-tx:#854f0b;--danger-bg:#fcebeb;--danger-tx:#a32d2d;
+  --radius:12px;--radius-s:8px;
+  --font:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#1f1e1c;--surface:#2a2925;--surface2:#33322d;--text:#f5f3ee;--text2:#b4b2a9;--text3:#888780;
+    --border:rgba(255,255,255,.14);--border2:rgba(255,255,255,.26);
+    --info-bg:#0c447c;--info-tx:#b5d4f4;--ok-bg:#085041;--ok-tx:#9fe1cb;
+    --warn-bg:#633806;--warn-tx:#fac775;--danger-bg:#791f1f;--danger-tx:#f7c1c1;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.7;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:1.5rem 1.1rem 4rem}
+.head{margin:0 0 1.5rem}
+.head h1{font-size:20px;font-weight:500;margin:0 0 .3rem}
+.head .sub{font-size:13.5px;color:var(--text2);margin:0}
+.head .topic{display:inline-block;margin-top:.6rem;background:var(--info-bg);color:var(--info-tx);
+  font-size:13px;font-weight:500;padding:5px 12px;border-radius:var(--radius-s)}
+.card{background:var(--surface);border:.5px solid var(--border);border-radius:var(--radius);padding:1.25rem;margin-bottom:1rem}
+.card-tag{font-size:11.5px;font-weight:500;color:var(--text2);letter-spacing:.04em;margin:0 0 1rem;padding-bottom:.75rem;border-bottom:.5px solid var(--border)}
+.case-desc{background:var(--surface2);border-radius:var(--radius-s);padding:1rem 1.1rem;margin-bottom:1.25rem;font-size:13.5px;line-height:1.85}
+.case-desc strong{font-weight:500}
+.q-block{margin-bottom:1.5rem}.q-block:last-child{margin-bottom:0}
+.q-title{font-size:14.5px;font-weight:500;margin:0 0 .6rem;line-height:1.6}
+.q-num{color:var(--text2);font-weight:400}
+.opt{display:flex;align-items:flex-start;gap:9px;padding:7px 9px;border-radius:7px;margin:3px 0;cursor:pointer;font-size:14px;line-height:1.5;transition:background .1s}
+.opt:hover{background:var(--surface2)}
+.opt input{margin-top:3px;flex-shrink:0;width:16px;height:16px;accent-color:#378add}
+.opt.correct{background:var(--ok-bg)!important;color:var(--ok-tx)}
+.opt.wrong{background:var(--danger-bg)!important;color:var(--danger-tx)}
+.opt.missed{background:var(--warn-bg)!important;color:var(--warn-tx)}
+.opt.locked{pointer-events:none;cursor:default}
+.q-fb{font-size:13px;margin-top:6px;font-weight:500;display:none}
+.q-expl{font-size:13px;line-height:1.7;color:var(--text2);background:var(--surface2);border-radius:7px;padding:.75rem;margin-top:.6rem;display:none}
+.total-row{display:none;align-items:center;justify-content:space-between;background:var(--surface2);border-radius:var(--radius-s);padding:1rem 1.25rem;margin-top:.5rem}
+.total-label{font-size:14px;color:var(--text2)}
+.total-val{font-size:28px;font-weight:500}
+.btn-row{display:flex;gap:10px;margin-top:1.25rem}
+.btn-s,.btn-r{cursor:pointer;border-radius:var(--radius-s);font-size:14px;padding:10px 24px;font-weight:500;border:none}
+.btn-s{background:var(--info-bg);color:var(--info-tx)}
+.btn-s:hover{opacity:.85}
+.btn-r{background:none;color:var(--text2);border:.5px solid var(--border2);display:none}
+.btn-r:hover{background:var(--surface2)}
+.foot{text-align:center;font-size:12px;color:var(--text3);margin-top:2rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <h1>内科护理学正高每日练习</h1>
+    <p class="sub">2026-06-13 · 共 5 题（满分 5 分）</p>
+    <span class="topic">今日主题：神经系统——急性缺血性脑卒中护理</span>
+  </div>
+
+  <div class="card">
+    <p class="card-tag">第一部分 · 多选题（共2题 · 每题1分）｜全部选对方得满分，错选/漏选均得0分</p>
+    <div id="q1-wrap" class="q-block"></div>
+    <div id="q2-wrap" class="q-block"></div>
+  </div>
+
+  <div class="card">
+    <p class="card-tag">第二部分 · 案例分析题（共3题 · 每题1分）｜不定项：选对得分，错选倒扣，单题保底0分</p>
+    <div class="case-desc"><strong>【病例】</strong>男性，68岁，高血压病史15年，2型糖尿病史8年，长期不规律服药。今晨6:00起床时突发右侧肢体无力，言语不清，家属约6:30送至急诊。<br><strong>查体：</strong>T 36.8℃，P 88次/min，R 18次/min，BP 178/102 mmHg，SpO₂ 96%（鼻导管吸氧2 L/min）；意识清楚，构音障碍；右侧上肢肌力2级、下肢肌力3级，右侧肢体浅感觉减退；NIHSS评分14分。<br><strong>辅助检查：</strong>急诊头颅CT未见出血灶；随机血糖7.8 mmol/L；INR 1.0；血小板182×10⁹/L；肌钙蛋白正常。</div>
+    <div id="q3-wrap" class="q-block"></div>
+    <div id="q4-wrap" class="q-block"></div>
+    <div id="q5-wrap" class="q-block"></div>
+  </div>
+
+  <div class="btn-row">
+    <button class="btn-s" id="btn-submit" onclick="doSubmit()">交卷评分</button>
+    <button class="btn-r" id="btn-report" onclick="reportFeishu()" style="display:none">上报成绩到飞书</button>
+    <button class="btn-r" id="btn-reset" onclick="doReset()">重做</button>
+  </div>
+  <div class="total-row" id="total-row">
+    <span class="total-label">本次总分</span>
+    <span class="total-val" id="total-val"></span>
+  </div>
+  <p class="foot">人民卫生出版社《内科护理学》及现行指南 · 每日自动生成</p>
+</div>
+
+<script>
+const Qs=[
+  {
+    "id": 1,
+    "type": "multi",
+    "num": "1",
+    "title": "关于急性缺血性脑卒中患者的吞咽障碍护理，正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "所有急性脑卒中患者在进食或服药前须完成吞咽功能筛查（如洼田饮水试验）"
+      },
+      {
+        "k": "B",
+        "t": "确认存在吞咽障碍者，应将固体食物加工为糊状，液体加入增稠剂，以降低误吸风险"
+      },
+      {
+        "k": "C",
+        "t": "进食时将患者头部稍后仰（仰卧平卧位），利用重力加速食物下咽"
+      },
+      {
+        "k": "D",
+        "t": "严重吞咽障碍患者应早期留置鼻胃管，保证营养支持并防止误吸性肺炎"
+      },
+      {
+        "k": "E",
+        "t": "进食后须保持坐位或半卧位（≥30°）至少30分钟，以减少胃内容物反流"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "expl": "A正确：AHA/ASA指南及《中国脑卒中护理指南》均推荐进食前进行吞咽筛查，以识别误吸风险；B正确：食物改变质地（糊状）和液体增稠是吞咽障碍患者安全进食的核心干预；D正确：严重吞咽障碍（Ⅳ～Ⅴ级）须尽早留置胃管提供肠内营养；E正确：进食后保持上身抬高可有效减少胃食管反流与误吸；C错误：头后仰（平卧）会使食物和液体更易进入气道，应保持坐位或颈部微前屈（颌胸位）以保护气道，头后仰是误吸高危体位。"
+  },
+  {
+    "id": 2,
+    "type": "multi",
+    "num": "2",
+    "title": "关于急性缺血性脑卒中患者的基础护理与并发症预防，正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "急性期高热患者（体温＞37.5℃）应积极降温，体温每升高1℃神经功能损害可加重"
+      },
+      {
+        "k": "B",
+        "t": "对有下肢深静脉血栓（DVT）风险的偏瘫患者，应使用间歇充气加压装置（IPC）预防"
+      },
+      {
+        "k": "C",
+        "t": "保持大便通畅，避免用力排便，必要时遵医嘱使用缓泻剂，防止Valsalva动作升高颅内压"
+      },
+      {
+        "k": "D",
+        "t": "急性期须常规限制水分摄入至500 mL/d，以预防脑水肿加重"
+      },
+      {
+        "k": "E",
+        "t": "留置导尿管护理时应每日清洁尿道口，保持引流管通畅，并尽早评估拔管可行性"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "expl": "A正确：高热通过增加脑代谢需求、加重梗死区缺氧而扩大梗死灶，体温每升高1℃神经损害加重，须积极控制体温；B正确：IPC（气压泵）可促进静脉回流，是偏瘫患者DVT预防的非药物首选，不增加出血风险；C正确：大便用力引发Valsalva动作可使颅内压骤升，卒中急性期须保持大便通畅；E正确：尿管护理（日常会阴清洁、无菌操作、尽早拔管）是预防导管相关尿路感染（CAUTI）的核心措施；D错误：急性脑卒中患者不须常规限水，过度限水反而加重血液浓缩、促进血栓形成，应根据液体平衡评估维持正常容量状态。"
+  },
+  {
+    "id": 3,
+    "type": "case",
+    "num": "3",
+    "title": "对于该患者，急诊最紧迫的护理措施是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "立即遵医嘱给予阿司匹林300 mg嚼服进行抗血小板治疗"
+      },
+      {
+        "k": "B",
+        "t": "立即通知医生评估静脉溶栓（rt-PA）适应证，协助开通卒中绿色通道，记录发病时间"
+      },
+      {
+        "k": "C",
+        "t": "完善吞咽功能评估后给予流质饮食，维持营养"
+      },
+      {
+        "k": "D",
+        "t": "迅速建立静脉通路，遵医嘱备好rt-PA，持续监测生命体征及神经系统体征"
+      },
+      {
+        "k": "E",
+        "t": "立即静脉推注尼莫地平扩张脑血管，改善脑血流"
+      }
+    ],
+    "correct": [
+      "B",
+      "D"
+    ],
+    "expl": "该患者发病至急诊约30分钟，CT排除出血，在4.5小时溶栓时间窗内，首要任务是争分夺秒完成溶栓评估和准备；B正确：卒中绿色通道目标是DNT（door-to-needle time）≤60分钟，准确记录发病时间是溶栓决策关键；D正确：建立静脉通路、备药、生命体征和NIHSS监测是溶栓前的关键护理准备；A错误：拟行静脉溶栓者，溶栓前不给抗血小板药，溶栓后24小时内亦不使用（除非CTA/MRA证实大血管未开通另行评估）；C错误：吞咽筛查和进食评估不是此刻最紧迫的事项；E错误：尼莫地平用于蛛网膜下腔出血后血管痉挛，急性缺血性脑卒中急性期禁用钙拮抗剂静推（会显著降低血压，危及缺血半暗带灌注）。"
+  },
+  {
+    "id": 4,
+    "type": "case",
+    "num": "4",
+    "title": "医生决定给予rt-PA静脉溶栓（0.9 mg/kg，最大剂量90 mg）。溶栓过程中下列护理措施正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "总量的10%在开始1分钟内静脉推注，其余90%于60分钟内静脉滴注完毕"
+      },
+      {
+        "k": "B",
+        "t": "溶栓期间若血压升至190/115 mmHg，应立即遵医嘱处理，将血压控制在180/105 mmHg以下"
+      },
+      {
+        "k": "C",
+        "t": "溶栓后2小时内，可以进行动脉穿刺抽血做血气分析"
+      },
+      {
+        "k": "D",
+        "t": "溶栓输注过程中每15～30分钟评估一次神经系统体征（包括NIHSS评分），如出现剧烈头痛、恶心呕吐、急性血压升高，应立即停药并报告医生"
+      },
+      {
+        "k": "E",
+        "t": "溶栓后24小时内不得给予任何抗凝或抗血小板药物，除非复查CT排除颅内出血且经神经科医生评估"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "expl": "A正确：rt-PA标准用法为总量0.9 mg/kg（最大90 mg），10%团注（1 min），90%滴注（60 min），此为AHA/ASA及中国指南推荐的标准给药方案；B正确：溶栓期间血压管理目标为＜180/105 mmHg，超过须立即处理，防止高血压导致出血转化；D正确：溶栓中须密切神经监测，剧烈头痛+血压骤升+恶心呕吐高度提示症状性颅内出血，须立即停药；E正确：溶栓后24小时内禁用抗凝/抗血小板，24小时后复查CT无出血方可评估是否给予；C错误：溶栓后应避免24小时内穿刺操作（动脉、静脉）以防出血，特别是不可压迫部位（股动脉、锁骨下静脉）；溶栓已建立的静脉通路可继续使用，但不应新增穿刺。"
+  },
+  {
+    "id": 5,
+    "type": "case",
+    "num": "5",
+    "title": "溶栓后24小时复查头颅CT示：左侧大脑中动脉供血区大面积梗死（约120 mL），伴少量出血转化；患者意识水平下降，GCS评分10分，右侧肢体完全瘫痪。此时护理措施正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "将床头抬高15°～30°，以兼顾降低颅内压与保证脑灌注压"
+      },
+      {
+        "k": "B",
+        "t": "密切观察双侧瞳孔（大小、对光反射）及GCS评分，警惕脑疝早期征象"
+      },
+      {
+        "k": "C",
+        "t": "立即停用所有降压药物，允许血压自由升高以维持脑灌注压"
+      },
+      {
+        "k": "D",
+        "t": "气道评估异常或GCS≤8分时，协助备气管插管，做好气道保护准备"
+      },
+      {
+        "k": "E",
+        "t": "每2小时翻身一次，做好皮肤评估，使用泡沫/气垫床，预防压力性损伤"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "expl": "A正确：大面积脑梗死伴颅内压升高时，床头抬高15°～30°可减轻脑水肿、降低ICP，同时不致过度降低脑灌注压（高于30°可能减少静脉回流而适得其反）；B正确：大面积梗死可引起脑水肿高峰（48～72小时），出现同侧瞳孔散大、对侧肢体去脑强直提示颞叶钩回疝，须立即处理，护士须持续监测；D正确：GCS≤8分提示气道保护性反射可能不足，须做好气管插管及有创通气准备；E正确：完全偏瘫患者长期卧床是压疮高危，规律翻身+减压敷料+皮肤评估是基础护理必须；C错误：急性脑卒中不须也不能停用所有降压药，溶栓后出血转化患者血压目标需个体化管理（通常维持收缩压＜180 mmHg），任意停药可导致血压骤升加重出血转化。"
+  }
+];
+const QUIZ_DATE="2026-06-13";
+const QUIZ_TOPIC="神经系统——急性缺血性脑卒中护理";
+const FEISHU_FORM="https://dcnn82x31z7p.feishu.cn/share/base/form/shrcnBdV2GxPDcMoLoU3dupXsDb";
+let lastTotal=0, lastPer=[];
+
+function renderQ(q,wrapId){
+  const wrap=document.getElementById(wrapId);
+  let h=`<p class="q-title"><span class="q-num">${q.num}. </span>${q.title}</p>`;
+  q.opts.forEach(o=>{
+    h+=`<label class="opt" id="opt-${q.id}-${o.k}"><input type="checkbox" id="cb-${q.id}-${o.k}" value="${o.k}"><span><strong>${o.k}.</strong> ${o.t}</span></label>`;
+  });
+  h+=`<div class="q-fb" id="fb-${q.id}"></div><div class="q-expl" id="expl-${q.id}">【解析】${q.expl}</div>`;
+  wrap.innerHTML=h;
+}
+const wraps=['q1-wrap','q2-wrap','q3-wrap','q4-wrap','q5-wrap'];
+Qs.forEach((q,i)=>renderQ(q,wraps[i]));
+let done=false;
+function getSel(qid){return Qs.find(q=>q.id===qid).opts.filter(o=>document.getElementById('cb-'+qid+'-'+o.k).checked).map(o=>o.k);}
+function doSubmit(){
+  if(done)return;done=true;
+  document.getElementById('btn-submit').style.display='none';
+  document.getElementById('btn-reset').style.display='inline-block';
+  document.getElementById('btn-report').style.display='inline-block';
+  let total=0;const per=[];
+  Qs.forEach(q=>{
+    const sel=getSel(q.id),cor=q.correct;let qScore;
+    if(q.type==='multi'){const allRight=cor.every(k=>sel.includes(k))&&sel.every(k=>cor.includes(k));qScore=allRight?1:0;}
+    else{if(sel.length===0){qScore=0;}else{const w=1/cor.length;let s=0;sel.forEach(k=>{if(cor.includes(k))s+=w;else s-=w;});qScore=Math.max(0,s);}}
+    total+=qScore;per.push(Math.round(qScore*100)/100);
+    q.opts.forEach(o=>{
+      const el=document.getElementById('opt-'+q.id+'-'+o.k),cb=document.getElementById('cb-'+q.id+'-'+o.k);
+      cb.disabled=true;el.classList.add('locked');
+      const isCor=cor.includes(o.k),isSel=sel.includes(o.k);
+      if(isSel&&isCor)el.classList.add('correct');else if(isSel&&!isCor)el.classList.add('wrong');else if(!isSel&&isCor)el.classList.add('missed');
+    });
+    const fb=document.getElementById('fb-'+q.id);fb.style.display='block';
+    if(q.type==='multi'){fb.textContent=qScore===1?'✓ 得分 1 / 1':'✗ 得分 0 / 1（须全部选对）';fb.style.color=qScore===1?'var(--ok-tx)':'var(--danger-tx)';}
+    else{const disp=qScore.toFixed(2);fb.textContent=`得分 ${disp} / 1`;fb.style.color=qScore>=0.999?'var(--ok-tx)':qScore>0?'var(--warn-tx)':'var(--danger-tx)';}
+    document.getElementById('expl-'+q.id).style.display='block';
+  });
+  const tr=document.getElementById('total-row');tr.style.display='flex';
+  document.getElementById('total-val').textContent=total.toFixed(2)+' / 5';
+  lastTotal=total;lastPer=per;
+}
+function reportFeishu(){
+  if(!done){alert('请先交卷评分再上报');return;}
+  const u=FEISHU_FORM
+    +'?prefill_'+encodeURIComponent('日期')+'='+encodeURIComponent(QUIZ_DATE)
+    +'&prefill_'+encodeURIComponent('主题')+'='+encodeURIComponent(QUIZ_TOPIC)
+    +'&prefill_'+encodeURIComponent('总分')+'='+encodeURIComponent(lastTotal.toFixed(2))
+    +'&prefill_'+encodeURIComponent('各题得分')+'='+encodeURIComponent(lastPer.join(','));
+  if(typeof openLink==='function')openLink(u);else window.open(u,'_blank');
+}
+function doReset(){
+  done=false;
+  Qs.forEach(q=>{
+    q.opts.forEach(o=>{
+      const el=document.getElementById('opt-'+q.id+'-'+o.k),cb=document.getElementById('cb-'+q.id+'-'+o.k);
+      cb.checked=false;cb.disabled=false;el.classList.remove('correct','wrong','missed','locked');
+    });
+    document.getElementById('fb-'+q.id).style.display='none';
+    document.getElementById('expl-'+q.id).style.display='none';
+  });
+  document.getElementById('total-row').style.display='none';
+  document.getElementById('btn-submit').style.display='inline-block';
+  document.getElementById('btn-reset').style.display='none';
+  document.getElementById('btn-report').style.display='none';
+}
+</script>
+</body>
+</html>
