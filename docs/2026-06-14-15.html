@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>内科护理学正高每日练习 · 2026-06-14</title>
+<style>
+:root{
+  --bg:#faf9f5;--surface:#ffffff;--surface2:#f1efe8;--text:#1f1e1c;--text2:#5f5e5a;--text3:#888780;
+  --border:rgba(0,0,0,.12);--border2:rgba(0,0,0,.22);
+  --info-bg:#e6f1fb;--info-tx:#0c447c;--ok-bg:#e1f5ee;--ok-tx:#0f6e56;
+  --warn-bg:#faeeda;--warn-tx:#854f0b;--danger-bg:#fcebeb;--danger-tx:#a32d2d;
+  --radius:12px;--radius-s:8px;
+  --font:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#1f1e1c;--surface:#2a2925;--surface2:#33322d;--text:#f5f3ee;--text2:#b4b2a9;--text3:#888780;
+    --border:rgba(255,255,255,.14);--border2:rgba(255,255,255,.26);
+    --info-bg:#0c447c;--info-tx:#b5d4f4;--ok-bg:#085041;--ok-tx:#9fe1cb;
+    --warn-bg:#633806;--warn-tx:#fac775;--danger-bg:#791f1f;--danger-tx:#f7c1c1;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.7;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:1.5rem 1.1rem 4rem}
+.head{margin:0 0 1.5rem}
+.head h1{font-size:20px;font-weight:500;margin:0 0 .3rem}
+.head .sub{font-size:13.5px;color:var(--text2);margin:0}
+.head .topic{display:inline-block;margin-top:.6rem;background:var(--info-bg);color:var(--info-tx);
+  font-size:13px;font-weight:500;padding:5px 12px;border-radius:var(--radius-s)}
+.card{background:var(--surface);border:.5px solid var(--border);border-radius:var(--radius);padding:1.25rem;margin-bottom:1rem}
+.card-tag{font-size:11.5px;font-weight:500;color:var(--text2);letter-spacing:.04em;margin:0 0 1rem;padding-bottom:.75rem;border-bottom:.5px solid var(--border)}
+.case-desc{background:var(--surface2);border-radius:var(--radius-s);padding:1rem 1.1rem;margin-bottom:1.25rem;font-size:13.5px;line-height:1.85}
+.case-desc strong{font-weight:500}
+.q-block{margin-bottom:1.5rem}.q-block:last-child{margin-bottom:0}
+.q-title{font-size:14.5px;font-weight:500;margin:0 0 .6rem;line-height:1.6}
+.q-num{color:var(--text2);font-weight:400}
+.opt{display:flex;align-items:flex-start;gap:9px;padding:7px 9px;border-radius:7px;margin:3px 0;cursor:pointer;font-size:14px;line-height:1.5;transition:background .1s}
+.opt:hover{background:var(--surface2)}
+.opt input{margin-top:3px;flex-shrink:0;width:16px;height:16px;accent-color:#378add}
+.opt.correct{background:var(--ok-bg)!important;color:var(--ok-tx)}
+.opt.wrong{background:var(--danger-bg)!important;color:var(--danger-tx)}
+.opt.missed{background:var(--warn-bg)!important;color:var(--warn-tx)}
+.opt.locked{pointer-events:none;cursor:default}
+.q-fb{font-size:13px;margin-top:6px;font-weight:500;display:none}
+.q-expl{font-size:13px;line-height:1.7;color:var(--text2);background:var(--surface2);border-radius:7px;padding:.75rem;margin-top:.6rem;display:none}
+.total-row{display:none;align-items:center;justify-content:space-between;background:var(--surface2);border-radius:var(--radius-s);padding:1rem 1.25rem;margin-top:.5rem}
+.total-label{font-size:14px;color:var(--text2)}
+.total-val{font-size:28px;font-weight:500}
+.btn-row{display:flex;gap:10px;margin-top:1.25rem}
+.btn-s,.btn-r{cursor:pointer;border-radius:var(--radius-s);font-size:14px;padding:10px 24px;font-weight:500;border:none}
+.btn-s{background:var(--info-bg);color:var(--info-tx)}
+.btn-s:hover{opacity:.85}
+.btn-r{background:none;color:var(--text2);border:.5px solid var(--border2);display:none}
+.btn-r:hover{background:var(--surface2)}
+.foot{text-align:center;font-size:12px;color:var(--text3);margin-top:2rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <h1>内科护理学正高每日练习</h1>
+    <p class="sub">2026-06-14 · 共 5 题（满分 5 分）</p>
+    <span class="topic">今日主题：神经系统——癫痫持续状态（SE）护理</span>
+  </div>
+
+  <div class="card">
+    <p class="card-tag">第一部分 · 多选题（共2题 · 每题1分）｜全部选对方得满分，错选/漏选均得0分</p>
+    <div id="q1-wrap" class="q-block"></div>
+    <div id="q2-wrap" class="q-block"></div>
+  </div>
+
+  <div class="card">
+    <p class="card-tag">第二部分 · 案例分析题（共3题 · 每题1分）｜不定项：选对得分，错选倒扣，单题保底0分</p>
+    <div class="case-desc"><strong>【病例】</strong>男，38岁，脑外伤后继发性癫痫病史5年，长期口服丙戊酸钠（500 mg bid）+左乙拉西坦（500 mg bid），近3天因「感冒」自行停药。当日09:00起频繁全面强直-阵挛发作，院前急救给予地西泮10 mg IV未终止，到院时持续发作已约20分钟。<br><strong>查体：</strong>T 38.6℃，BP 168/102 mmHg，HR 136次/min，SpO₂ 88%（未吸氧）；意识丧失，持续全身强直-阵挛，口唇发绀，牙关紧闭，双侧瞳孔等大等圆直径3 mm，光反射迟钝。<br><strong>辅助检查：</strong>末梢血糖5.2 mmol/L；血钠135 mmol/L；丙戊酸钠血药浓度&lt;10 μg/mL（治疗窗50~100 μg/mL）。</div>
+    <div id="q3-wrap" class="q-block"></div>
+    <div id="q4-wrap" class="q-block"></div>
+    <div id="q5-wrap" class="q-block"></div>
+  </div>
+
+  <div class="btn-row">
+    <button class="btn-s" id="btn-submit" onclick="doSubmit()">交卷评分</button>
+    <button class="btn-r" id="btn-report" onclick="reportFeishu()" style="display:none">上报成绩到飞书</button>
+    <button class="btn-r" id="btn-reset" onclick="doReset()">重做</button>
+  </div>
+  <div class="total-row" id="total-row">
+    <span class="total-label">本次总分</span>
+    <span class="total-val" id="total-val"></span>
+  </div>
+  <p class="foot">人民卫生出版社《内科护理学》及现行指南 · 每日自动生成</p>
+</div>
+
+<script>
+const Qs=[
+  {
+    "id": 1,
+    "type": "multi",
+    "num": "1",
+    "title": "关于癫痫持续状态（SE）的诊断标准与分类，正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "全面强直-阵挛性SE的操作性诊断时间为≥5分钟，2次及以上发作间期意识未恢复也符合SE定义"
+      },
+      {
+        "k": "B",
+        "t": "非惊厥性SE（NCSE）可仅表现为意识水平下降或行为异常，脑电图（EEG）是确诊的唯一手段"
+      },
+      {
+        "k": "C",
+        "t": "难治性SE（RSE）定义为苯二氮䓬类联合至少一种二线抗癫痫药（丙戊酸钠/左乙拉西坦/苯妥英）充分治疗后发作仍持续"
+      },
+      {
+        "k": "D",
+        "t": "局灶性意识保留型SE（focal aware SE）属良性发作，通常不需特殊药物治疗"
+      },
+      {
+        "k": "E",
+        "t": "超级难治性SE（super-RSE）定义为麻醉药物治疗≥24小时仍不能控制，或减量/停药后复发"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "expl": "A正确：2015年ILAE指南将全面强直-阵挛型SE的操作性时间定义（t1）从传统30分钟缩短为≥5分钟，此时须立即干预；B正确：NCSE无典型抽搐，仅表现为意识混浊/行为怪异，须EEG方可确诊；C正确：苯二氮䓬类（一线）+一种二线ASM均无效即定义为RSE，须升级为麻醉药治疗；D错误：局灶性SE即便意识保留也需积极处理，因为可能泛化为全面性SE，且持续异常放电本身会造成神经元损伤；E正确：super-RSE为全麻药物持续泵注≥24小时仍控制不佳，或停药后复发，须考虑生酮饮食、免疫治疗、低温治疗等特殊手段。"
+  },
+  {
+    "id": 2,
+    "type": "multi",
+    "num": "2",
+    "title": "关于SE急救药物应用与护理要点，正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "院内成人SE一线用药首选苯二氮䓬类静脉制剂（劳拉西泮0.1 mg/kg或地西泮0.15~0.2 mg/kg），给药速率地西泮<2 mg/min"
+      },
+      {
+        "k": "B",
+        "t": "苯二氮䓬类给药后须持续监测呼吸频率与SpO₂，并在床旁备好气道管理用具（喉镜、气管插管）"
+      },
+      {
+        "k": "C",
+        "t": "丙戊酸钠静脉给药须>100 mg/min快速推注，以尽快控制发作"
+      },
+      {
+        "k": "D",
+        "t": "SE发作时应将金属压舌板置入口腔以防止舌咬伤"
+      },
+      {
+        "k": "E",
+        "t": "进入难治性SE后，应准备咪达唑仑/丙泊酚持续静脉泵注，并行持续脑电图（cEEG）监测以评估治疗效果"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "E"
+    ],
+    "expl": "A正确：院内SE一线为苯二氮䓬类IV（劳拉西泮优先，国内常用地西泮0.15 mg/kg，速率<2 mg/min），可重复1次；B正确：苯二氮䓬类最重要的副作用为呼吸抑制，全程监测呼吸并备好气道管理器械是必须的护理措施；C错误：丙戊酸钠IV推荐速率≤40 mg/min（通常15~20 mg/min），过快可致低血压和心律失常；D错误：牙关紧闭时严禁将硬物（尤其金属）置入口腔，会造成牙齿断裂和口腔撕裂伤；正确做法为侧卧位、枕头保护头部；E正确：RSE须转入ICU，麻醉药持续泵注+cEEG监测达到爆发-抑制目标是标准处置。"
+  },
+  {
+    "id": 3,
+    "type": "case",
+    "num": "3",
+    "title": "患者入院后护士应立即优先实施的措施包括",
+    "opts": [
+      {
+        "k": "A",
+        "t": "开放静脉通路，遵医嘱立即给予劳拉西泮0.1 mg/kg（或地西泮5~10 mg）缓慢IV，同时床旁备好喉镜与气管插管"
+      },
+      {
+        "k": "B",
+        "t": "将金属压舌板置入上下臼齿间，防止发作时舌咬伤"
+      },
+      {
+        "k": "C",
+        "t": "立即高流量吸氧（面罩10 L/min）并监测SpO₂，SpO₂<90%时准备气管插管"
+      },
+      {
+        "k": "D",
+        "t": "准确记录发作开始时间及临床特征（强直/阵挛、眼球偏斜方向），启动SE急救计时流程"
+      },
+      {
+        "k": "E",
+        "t": "等待发作自然终止后再静脉给药，以免干扰自然缓解进程"
+      }
+    ],
+    "correct": [
+      "A",
+      "C",
+      "D"
+    ],
+    "expl": "A正确：持续发作已≥5分钟（且院前苯二氮䓬类无效），须立即追加苯二氮䓬类IV；气道管理设备同步备好，因苯二氮䓬类可致呼吸抑制；B错误：禁止强行撬开牙关紧闭的口腔或置入硬物，会造成牙齿折断和口腔撕裂；正确做法是侧卧位，用枕头或手掌保护头部；C正确：患者SpO₂仅88%，持续低氧血症加重脑损伤，立即高流量吸氧是优先处置；D正确：准确记时是SE分级干预（5 min/20 min/40 min节点）的基础，护士启动SE计时流程是规范急救的必要环节；E错误：全面强直-阵挛性SE不会安全自然终止，等待只会加重神经元损伤，首剂苯二氮䓬类须立即给予。"
+  },
+  {
+    "id": 4,
+    "type": "case",
+    "num": "4",
+    "title": "给予劳拉西泮4 mg IV后发作暂停，5分钟后再次发作。遵医嘱静脉滴注丙戊酸钠30 mg/kg（约2 g）。下列护理监测要点正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "控制丙戊酸钠输注速率≤40 mg/min，并持续监测心率和血压（可致低血压、心律失常）"
+      },
+      {
+        "k": "B",
+        "t": "丙戊酸钠2g给药20分钟后仍发作，可判断进入难治性SE，遵医嘱准备麻醉药物持续泵注"
+      },
+      {
+        "k": "C",
+        "t": "丙戊酸钠一旦静脉给药就能迅速达到治疗浓度，无需再监测血药浓度"
+      },
+      {
+        "k": "D",
+        "t": "监测血氨及肝功能，因丙戊酸钠可引起高氨血症，肝功能损害者风险更大"
+      },
+      {
+        "k": "E",
+        "t": "每30分钟进行神经系统评估（GCS、瞳孔、角膜反射），记录发作频率与持续时间"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "expl": "A正确：丙戊酸钠IV速率须≤40 mg/min（快速给药可致低血压、QT延长及心律失常），护士须控速并持续监测生命体征；B正确：经苯二氮䓬类+丙戊酸钠（二线）仍失败即符合RSE定义，须立即升级为麻醉药（咪达唑仑/丙泊酚/戊巴比妥）持续泵注并转ICU；C错误：该患者入院时丙戊酸钠血药浓度仅<10 μg/mL（治疗窗50~100 μg/mL），负荷剂量给药后仍需监测浓度以确认是否达标（存在个体差异）；D正确：丙戊酸钠可致无症状性高氨血症，在肝功能损害、多药联用患者中可诱发脑病；须监测血氨和肝酶；E正确：连续神经系统评估是SE护理的核心，每30分钟记录GCS及发作特征是临床标准做法。"
+  },
+  {
+    "id": 5,
+    "type": "case",
+    "num": "5",
+    "title": "患者进入难治性SE，转ICU后行气管插管+机械通气，遵医嘱启动咪达唑仑持续泵注并进行cEEG监测。下列ICU护理措施正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "cEEG监测目标为爆发-抑制模式（每分钟爆发≤2次），护士须识别电极接触不良/出汗所致伪差并及时通知神经电生理技师"
+      },
+      {
+        "k": "B",
+        "t": "咪达唑仑泵速一经设定不可调整，须每24小时根据脑电图情况整体评估后统一更改"
+      },
+      {
+        "k": "C",
+        "t": "预防ICU并发症：床头抬高30~45°防VAP，定时翻身防压疮，被动关节活动防DVT，加强口腔护理"
+      },
+      {
+        "k": "D",
+        "t": "停用咪达唑仑时须缓慢减量（减量幅度≤10%/h或每24小时减10~25%），并持续cEEG监测以识别SE复发"
+      },
+      {
+        "k": "E",
+        "t": "患者SpO₂持续>95%时可停止cEEG监测，因脑电稳定与循环氧合指标正相关"
+      }
+    ],
+    "correct": [
+      "A",
+      "C",
+      "D"
+    ],
+    "expl": "A正确：爆发-抑制是RSE的治疗目标脑电模式，护士须掌握基本EEG伪差识别（肌电伪差、电极脱落、出汗）以与真实脑电活动区分；B错误：咪达唑仑泵速须根据cEEG反馈实时调整（通常每小时评估），而非固定24小时才调整，因患者耐受和药动学个体差异大；C正确：RSE患者长期制动、镇静，须全套ICU重症护理：床头抬高防VAP、翻身防压疮、被动活动防DVT、口腔护理减少VAP风险；D正确：减量过快是SE复发的主要原因，须缓慢逐步减量并持续cEEG监测；E错误：SpO₂正常并不代表癫痫放电已终止——NCSE或亚临床SE可在无抽搐、循环氧合正常的情况下持续存在，cEEG监测须持续至脑电图确认SE控制。"
+  }
+];
+const QUIZ_DATE="2026-06-14";
+const QUIZ_TOPIC="神经系统——癫痫持续状态（SE）护理";
+const FEISHU_FORM="https://dcnn82x31z7p.feishu.cn/share/base/form/shrcnBdV2GxPDcMoLoU3dupXsDb";
+let lastTotal=0, lastPer=[];
+
+function renderQ(q,wrapId){
+  const wrap=document.getElementById(wrapId);
+  let h=`<p class="q-title"><span class="q-num">${q.num}. </span>${q.title}</p>`;
+  q.opts.forEach(o=>{
+    h+=`<label class="opt" id="opt-${q.id}-${o.k}"><input type="checkbox" id="cb-${q.id}-${o.k}" value="${o.k}"><span><strong>${o.k}.</strong> ${o.t}</span></label>`;
+  });
+  h+=`<div class="q-fb" id="fb-${q.id}"></div><div class="q-expl" id="expl-${q.id}">【解析】${q.expl}</div>`;
+  wrap.innerHTML=h;
+}
+const wraps=['q1-wrap','q2-wrap','q3-wrap','q4-wrap','q5-wrap'];
+Qs.forEach((q,i)=>renderQ(q,wraps[i]));
+let done=false;
+function getSel(qid){return Qs.find(q=>q.id===qid).opts.filter(o=>document.getElementById('cb-'+qid+'-'+o.k).checked).map(o=>o.k);}
+function doSubmit(){
+  if(done)return;done=true;
+  document.getElementById('btn-submit').style.display='none';
+  document.getElementById('btn-reset').style.display='inline-block';
+  document.getElementById('btn-report').style.display='inline-block';
+  let total=0;const per=[];
+  Qs.forEach(q=>{
+    const sel=getSel(q.id),cor=q.correct;let qScore;
+    if(q.type==='multi'){const allRight=cor.every(k=>sel.includes(k))&&sel.every(k=>cor.includes(k));qScore=allRight?1:0;}
+    else{if(sel.length===0){qScore=0;}else{const w=1/cor.length;let s=0;sel.forEach(k=>{if(cor.includes(k))s+=w;else s-=w;});qScore=Math.max(0,s);}}
+    total+=qScore;per.push(Math.round(qScore*100)/100);
+    q.opts.forEach(o=>{
+      const el=document.getElementById('opt-'+q.id+'-'+o.k),cb=document.getElementById('cb-'+q.id+'-'+o.k);
+      cb.disabled=true;el.classList.add('locked');
+      const isCor=cor.includes(o.k),isSel=sel.includes(o.k);
+      if(isSel&&isCor)el.classList.add('correct');else if(isSel&&!isCor)el.classList.add('wrong');else if(!isSel&&isCor)el.classList.add('missed');
+    });
+    const fb=document.getElementById('fb-'+q.id);fb.style.display='block';
+    if(q.type==='multi'){fb.textContent=qScore===1?'✓ 得分 1 / 1':'✗ 得分 0 / 1（须全部选对）';fb.style.color=qScore===1?'var(--ok-tx)':'var(--danger-tx)';}
+    else{const disp=qScore.toFixed(2);fb.textContent=`得分 ${disp} / 1`;fb.style.color=qScore>=0.999?'var(--ok-tx)':qScore>0?'var(--warn-tx)':'var(--danger-tx)';}
+    document.getElementById('expl-'+q.id).style.display='block';
+  });
+  const tr=document.getElementById('total-row');tr.style.display='flex';
+  document.getElementById('total-val').textContent=total.toFixed(2)+' / 5';
+  lastTotal=total;lastPer=per;
+}
+function reportFeishu(){
+  if(!done){alert('请先交卷评分再上报');return;}
+  const u=FEISHU_FORM
+    +'?prefill_'+encodeURIComponent('日期')+'='+encodeURIComponent(QUIZ_DATE)
+    +'&prefill_'+encodeURIComponent('主题')+'='+encodeURIComponent(QUIZ_TOPIC)
+    +'&prefill_'+encodeURIComponent('总分')+'='+encodeURIComponent(lastTotal.toFixed(2))
+    +'&prefill_'+encodeURIComponent('各题得分')+'='+encodeURIComponent(lastPer.join(','));
+  if(typeof openLink==='function')openLink(u);else window.open(u,'_blank');
+}
+function doReset(){
+  done=false;
+  Qs.forEach(q=>{
+    q.opts.forEach(o=>{
+      const el=document.getElementById('opt-'+q.id+'-'+o.k),cb=document.getElementById('cb-'+q.id+'-'+o.k);
+      cb.checked=false;cb.disabled=false;el.classList.remove('correct','wrong','missed','locked');
+    });
+    document.getElementById('fb-'+q.id).style.display='none';
+    document.getElementById('expl-'+q.id).style.display='none';
+  });
+  document.getElementById('total-row').style.display='none';
+  document.getElementById('btn-submit').style.display='inline-block';
+  document.getElementById('btn-reset').style.display='none';
+  document.getElementById('btn-report').style.display='none';
+}
+</script>
+</body>
+</html>
