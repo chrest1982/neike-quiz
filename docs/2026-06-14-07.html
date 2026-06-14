@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>内科护理学正高每日练习 · 2026-06-14</title>
+<style>
+:root{
+  --bg:#faf9f5;--surface:#ffffff;--surface2:#f1efe8;--text:#1f1e1c;--text2:#5f5e5a;--text3:#888780;
+  --border:rgba(0,0,0,.12);--border2:rgba(0,0,0,.22);
+  --info-bg:#e6f1fb;--info-tx:#0c447c;--ok-bg:#e1f5ee;--ok-tx:#0f6e56;
+  --warn-bg:#faeeda;--warn-tx:#854f0b;--danger-bg:#fcebeb;--danger-tx:#a32d2d;
+  --radius:12px;--radius-s:8px;
+  --font:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#1f1e1c;--surface:#2a2925;--surface2:#33322d;--text:#f5f3ee;--text2:#b4b2a9;--text3:#888780;
+    --border:rgba(255,255,255,.14);--border2:rgba(255,255,255,.26);
+    --info-bg:#0c447c;--info-tx:#b5d4f4;--ok-bg:#085041;--ok-tx:#9fe1cb;
+    --warn-bg:#633806;--warn-tx:#fac775;--danger-bg:#791f1f;--danger-tx:#f7c1c1;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.7;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:1.5rem 1.1rem 4rem}
+.head{margin:0 0 1.5rem}
+.head h1{font-size:20px;font-weight:500;margin:0 0 .3rem}
+.head .sub{font-size:13.5px;color:var(--text2);margin:0}
+.head .topic{display:inline-block;margin-top:.6rem;background:var(--info-bg);color:var(--info-tx);
+  font-size:13px;font-weight:500;padding:5px 12px;border-radius:var(--radius-s)}
+.card{background:var(--surface);border:.5px solid var(--border);border-radius:var(--radius);padding:1.25rem;margin-bottom:1rem}
+.card-tag{font-size:11.5px;font-weight:500;color:var(--text2);letter-spacing:.04em;margin:0 0 1rem;padding-bottom:.75rem;border-bottom:.5px solid var(--border)}
+.case-desc{background:var(--surface2);border-radius:var(--radius-s);padding:1rem 1.1rem;margin-bottom:1.25rem;font-size:13.5px;line-height:1.85}
+.case-desc strong{font-weight:500}
+.q-block{margin-bottom:1.5rem}.q-block:last-child{margin-bottom:0}
+.q-title{font-size:14.5px;font-weight:500;margin:0 0 .6rem;line-height:1.6}
+.q-num{color:var(--text2);font-weight:400}
+.opt{display:flex;align-items:flex-start;gap:9px;padding:7px 9px;border-radius:7px;margin:3px 0;cursor:pointer;font-size:14px;line-height:1.5;transition:background .1s}
+.opt:hover{background:var(--surface2)}
+.opt input{margin-top:3px;flex-shrink:0;width:16px;height:16px;accent-color:#378add}
+.opt.correct{background:var(--ok-bg)!important;color:var(--ok-tx)}
+.opt.wrong{background:var(--danger-bg)!important;color:var(--danger-tx)}
+.opt.missed{background:var(--warn-bg)!important;color:var(--warn-tx)}
+.opt.locked{pointer-events:none;cursor:default}
+.q-fb{font-size:13px;margin-top:6px;font-weight:500;display:none}
+.q-expl{font-size:13px;line-height:1.7;color:var(--text2);background:var(--surface2);border-radius:7px;padding:.75rem;margin-top:.6rem;display:none}
+.total-row{display:none;align-items:center;justify-content:space-between;background:var(--surface2);border-radius:var(--radius-s);padding:1rem 1.25rem;margin-top:.5rem}
+.total-label{font-size:14px;color:var(--text2)}
+.total-val{font-size:28px;font-weight:500}
+.btn-row{display:flex;gap:10px;margin-top:1.25rem}
+.btn-s,.btn-r{cursor:pointer;border-radius:var(--radius-s);font-size:14px;padding:10px 24px;font-weight:500;border:none}
+.btn-s{background:var(--info-bg);color:var(--info-tx)}
+.btn-s:hover{opacity:.85}
+.btn-r{background:none;color:var(--text2);border:.5px solid var(--border2);display:none}
+.btn-r:hover{background:var(--surface2)}
+.foot{text-align:center;font-size:12px;color:var(--text3);margin-top:2rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <h1>内科护理学正高每日练习</h1>
+    <p class="sub">2026-06-14 · 共 5 题（满分 5 分）</p>
+    <span class="topic">今日主题：呼吸系统——重症肺炎护理</span>
+  </div>
+
+  <div class="card">
+    <p class="card-tag">第一部分 · 多选题（共2题 · 每题1分）｜全部选对方得满分，错选/漏选均得0分</p>
+    <div id="q1-wrap" class="q-block"></div>
+    <div id="q2-wrap" class="q-block"></div>
+  </div>
+
+  <div class="card">
+    <p class="card-tag">第二部分 · 案例分析题（共3题 · 每题1分）｜不定项：选对得分，错选倒扣，单题保底0分</p>
+    <div class="case-desc"><strong>【病例】</strong>李某，男，68岁，2型糖尿病10年、高血压8年。因发热（T 39.8℃）、咳嗽咳黄脓痰、呼吸困难进行性加重5天急诊入院。<br><strong>查体：</strong>P 122次/min，R 32次/min，BP 86/54 mmHg；SpO₂ 84%（面罩吸氧8 L/min）；神志淡漠，口唇发绀，双肺广泛湿啰音。<br><strong>辅助检查：</strong>WBC 24.6×10⁹/L，N% 92%，PCT 58.3 ng/mL，CRP 286 mg/L；动脉血气（面罩吸氧8 L/min，FiO₂≈0.53）：pH 7.46，PaO₂ 64 mmHg，PaCO₂ 30 mmHg，氧合指数（P/F）≈121 mmHg；血肌酐 198 μmol/L，白蛋白 21 g/L；胸部CT：双肺多叶段大片实变影。</div>
+    <div id="q3-wrap" class="q-block"></div>
+    <div id="q4-wrap" class="q-block"></div>
+    <div id="q5-wrap" class="q-block"></div>
+  </div>
+
+  <div class="btn-row">
+    <button class="btn-s" id="btn-submit" onclick="doSubmit()">交卷评分</button>
+    <button class="btn-r" id="btn-report" onclick="reportFeishu()" style="display:none">上报成绩到飞书</button>
+    <button class="btn-r" id="btn-reset" onclick="doReset()">重做</button>
+  </div>
+  <div class="total-row" id="total-row">
+    <span class="total-label">本次总分</span>
+    <span class="total-val" id="total-val"></span>
+  </div>
+  <p class="foot">人民卫生出版社《内科护理学》及现行指南 · 每日自动生成</p>
+</div>
+
+<script>
+const Qs=[
+  {
+    "id": 1,
+    "type": "multi",
+    "num": "1",
+    "title": "关于重症社区获得性肺炎（SCAP）的护理评估要点，正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "呼吸频率≥30次/min是重症肺炎次要诊断标准之一，应密切监测"
+      },
+      {
+        "k": "B",
+        "t": "PaO₂/FiO₂（氧合指数）<250 mmHg提示重症，<150 mmHg提示合并中重度ARDS"
+      },
+      {
+        "k": "C",
+        "t": "脉搏血氧饱和度（SpO₂）可完全替代动脉血气，无需采集血气标本"
+      },
+      {
+        "k": "D",
+        "t": "血降钙素原（PCT）升高提示细菌感染可能性大，有助于指导抗菌药物启动与停药时机"
+      },
+      {
+        "k": "E",
+        "t": "感染性休克（低血压需血管活性药维持灌注压）是重症肺炎的主要诊断标准之一"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "expl": "A正确：R≥30次/min是IDSA/ATS重症肺炎次要标准之一；B正确：P/F<250 mmHg为重症肺炎次要标准，P/F按柏林定义<300为ARDS，<150 mmHg属中重度范围；D正确：PCT与细菌感染的关联性较强，可辅助判断感染严重程度及抗菌疗程；E正确：感染性休克为两项主要标准之一（另一项为需有创机械通气的呼吸衰竭）；C错误：SpO₂无法评估PaCO₂、pH及氧合指数（需知FiO₂），血气分析仍是重症患者的必要监测手段。"
+  },
+  {
+    "id": 2,
+    "type": "multi",
+    "num": "2",
+    "title": "关于机械通气患者预防呼吸机相关性肺炎（VAP）的护理措施，正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "床头抬高30°～45°（禁忌证除外），减少胃内容物反流与误吸"
+      },
+      {
+        "k": "B",
+        "t": "每6～8小时进行一次口腔护理，使用0.12%～0.2%氯己定含漱液，降低口咽定植菌负荷"
+      },
+      {
+        "k": "C",
+        "t": "气囊压力维持25～30 cmH₂O，每4～8小时监测一次，操作/翻身前检查并补足"
+      },
+      {
+        "k": "D",
+        "t": "每日评估撤机条件（镇静唤醒试验＋自主呼吸试验），尽早脱机拔管"
+      },
+      {
+        "k": "E",
+        "t": "常规每24小时更换一次呼吸机管路，减少病原体在管路中蓄积"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "expl": "A正确：半卧位是VAP集束化预防（VAP bundle）的核心措施，可有效减少误吸；B正确：氯己定口腔护理已被多项RCT证实可降低VAP发生率；C正确：气囊压力过低（＜20 cmH₂O）导致声门下分泌物渗漏至下呼吸道，是VAP重要发病机制；D正确：尽早撤机是减少VAP最根本的措施；E错误：循证证据显示频繁更换管路（如每24小时）并不降低VAP发生率，反而增加操作相关感染风险；推荐管路按需更换（可见污染/受损），无需定期更换。"
+  },
+  {
+    "id": 3,
+    "type": "case",
+    "num": "3",
+    "title": "根据该患者的临床资料，以下判断正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "R≥30次/min、P/F<250 mmHg、多叶段浸润、低血压，满足≥3条次要标准，符合重症社区获得性肺炎（SCAP）诊断"
+      },
+      {
+        "k": "B",
+        "t": "BP 86/54 mmHg（MAP≈65 mmHg临界），结合组织灌注不足表现（神志淡漠），符合感染性休克诊断标准"
+      },
+      {
+        "k": "C",
+        "t": "氧合指数（P/F）≈121 mmHg（＜100 mmHg），提示合并重度ARDS"
+      },
+      {
+        "k": "D",
+        "t": "pH 7.46、PaCO₂ 30 mmHg，提示存在呼吸性碱中毒，与呼吸频率增快（过度通气）相符"
+      },
+      {
+        "k": "E",
+        "t": "PCT 58.3 ng/mL可明确致病菌为革兰氏阴性菌，应据此直接选用对应靶向抗菌药物"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D"
+    ],
+    "expl": "A正确：该患者满足≥4条次要标准（R≥30、P/F<250、多叶浸润、低血压），符合SCAP诊断；B正确：神志淡漠＋低血压结合PCT极高度提示脓毒症休克；D正确：PaCO₂降低、pH升高为呼吸性碱中毒，与严重肺炎时过度通气一致；C错误：P/F≈121 mmHg处于100～200之间，依柏林标准属中度ARDS（重度定义为P/F＜100 mmHg，且需满足PEEP≥5 cmH₂O条件）；E错误：PCT是感染严重程度标志物，不能区分革兰氏阳性/阴性菌，抗菌药选择需综合流行病学、药敏和指南经验方案。"
+  },
+  {
+    "id": 4,
+    "type": "case",
+    "num": "4",
+    "title": "入院后30分钟内，护士应优先采取的护理措施包括",
+    "opts": [
+      {
+        "k": "A",
+        "t": "立即建立2条大口径静脉通路，采血培养（至少2套，从不同部位）后遵医嘱1小时内启动广谱抗菌药物"
+      },
+      {
+        "k": "B",
+        "t": "床头抬高30°，给予高流量鼻导管（HFNC）氧疗（初始流量40～60 L/min），目标SpO₂≥94%"
+      },
+      {
+        "k": "C",
+        "t": "遵医嘱予晶体液快速补液（30 mL/kg，1小时内输注），动态评估液体反应性（被动抬腿试验或脉压变异率）"
+      },
+      {
+        "k": "D",
+        "t": "留置导尿并记录每小时尿量，监测尿量≥0.5 mL/(kg·h)作为液体复苏疗效指标之一"
+      },
+      {
+        "k": "E",
+        "t": "等待痰培养药敏结果（通常48～72小时）回报后再选择抗菌药物，以免耐药"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "expl": "A正确：脓毒症集束化管理（Surviving Sepsis Campaign）要求1小时内采血培养并启动抗菌药物，2套血培养覆盖需氧＋厌氧；B正确：HFNC是中重度ARDS及重症肺炎氧合不佳的一线氧疗方式，可提供高流量加温湿化气体；C正确：脓毒症性低血压须在1小时内完成30 mL/kg晶体液复苏，并动态评估反应性；D正确：尿量是液体复苏与肾脏灌注的重要监测指标；E错误：感染性休克每延误1小时抗菌药死亡率上升7%～10%，必须在血培养后立即经验性抗菌治疗，不能等待培养结果。"
+  },
+  {
+    "id": 5,
+    "type": "case",
+    "num": "5",
+    "title": "经积极治疗6小时，患者仍呈HFNC（60 L/min，FiO₂ 1.0）下SpO₂ 87%，P/F＜100 mmHg，医嘱行气管插管接有创机械通气，以下ARDS保护性通气护理要点正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "遵医嘱设置小潮气量（4～6 mL/kg 预测体重），避免容积伤与气压伤"
+      },
+      {
+        "k": "B",
+        "t": "监测平台压（Pplat）≤30 cmH₂O，驱动压（ΔP）≤15 cmH₂O，发现超限及时告知医生调整"
+      },
+      {
+        "k": "C",
+        "t": "遵医嘱实施俯卧位通气（每天≥16小时），操作时保护眼部、受压骨突部位，防止管路意外脱出"
+      },
+      {
+        "k": "D",
+        "t": "为防止气道阻力升高，PEEP应设置为0（无PEEP），保持自然气道通畅"
+      },
+      {
+        "k": "E",
+        "t": "实施每日镇静唤醒试验（SAT）与自主呼吸试验（SBT），评估尽早撤机时机"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "expl": "A正确：小潮气量（LTV）策略是ARDS机械通气的核心，已被ARMA试验证实可降低死亡率；B正确：Pplat反映肺泡跨壁压，≤30 cmH₂O是安全阈值；驱动压（Pplat-PEEP）≤15 cmH₂O与ARDS预后密切相关；C正确：俯卧位通气每天≥16小时（PROSEVA研究），可改善重度ARDS患者28天死亡率；E正确：每日SAT+SBT是减少机械通气时间和VAP风险的循证策略；D错误：ARDS须设置适当的PEEP（通常5～20 cmH₂O）以保持肺泡开放、改善氧合，PEEP=0会导致肺泡反复萎陷-复张（萎陷伤），加重肺损伤。"
+  }
+];
+const QUIZ_DATE="2026-06-14";
+const QUIZ_TOPIC="呼吸系统——重症肺炎护理";
+const FEISHU_FORM="https://dcnn82x31z7p.feishu.cn/share/base/form/shrcnBdV2GxPDcMoLoU3dupXsDb";
+let lastTotal=0, lastPer=[];
+
+function renderQ(q,wrapId){
+  const wrap=document.getElementById(wrapId);
+  let h=`<p class="q-title"><span class="q-num">${q.num}. </span>${q.title}</p>`;
+  q.opts.forEach(o=>{
+    h+=`<label class="opt" id="opt-${q.id}-${o.k}"><input type="checkbox" id="cb-${q.id}-${o.k}" value="${o.k}"><span><strong>${o.k}.</strong> ${o.t}</span></label>`;
+  });
+  h+=`<div class="q-fb" id="fb-${q.id}"></div><div class="q-expl" id="expl-${q.id}">【解析】${q.expl}</div>`;
+  wrap.innerHTML=h;
+}
+const wraps=['q1-wrap','q2-wrap','q3-wrap','q4-wrap','q5-wrap'];
+Qs.forEach((q,i)=>renderQ(q,wraps[i]));
+let done=false;
+function getSel(qid){return Qs.find(q=>q.id===qid).opts.filter(o=>document.getElementById('cb-'+qid+'-'+o.k).checked).map(o=>o.k);}
+function doSubmit(){
+  if(done)return;done=true;
+  document.getElementById('btn-submit').style.display='none';
+  document.getElementById('btn-reset').style.display='inline-block';
+  document.getElementById('btn-report').style.display='inline-block';
+  let total=0;const per=[];
+  Qs.forEach(q=>{
+    const sel=getSel(q.id),cor=q.correct;let qScore;
+    if(q.type==='multi'){const allRight=cor.every(k=>sel.includes(k))&&sel.every(k=>cor.includes(k));qScore=allRight?1:0;}
+    else{if(sel.length===0){qScore=0;}else{const w=1/cor.length;let s=0;sel.forEach(k=>{if(cor.includes(k))s+=w;else s-=w;});qScore=Math.max(0,s);}}
+    total+=qScore;per.push(Math.round(qScore*100)/100);
+    q.opts.forEach(o=>{
+      const el=document.getElementById('opt-'+q.id+'-'+o.k),cb=document.getElementById('cb-'+q.id+'-'+o.k);
+      cb.disabled=true;el.classList.add('locked');
+      const isCor=cor.includes(o.k),isSel=sel.includes(o.k);
+      if(isSel&&isCor)el.classList.add('correct');else if(isSel&&!isCor)el.classList.add('wrong');else if(!isSel&&isCor)el.classList.add('missed');
+    });
+    const fb=document.getElementById('fb-'+q.id);fb.style.display='block';
+    if(q.type==='multi'){fb.textContent=qScore===1?'✓ 得分 1 / 1':'✗ 得分 0 / 1（须全部选对）';fb.style.color=qScore===1?'var(--ok-tx)':'var(--danger-tx)';}
+    else{const disp=qScore.toFixed(2);fb.textContent=`得分 ${disp} / 1`;fb.style.color=qScore>=0.999?'var(--ok-tx)':qScore>0?'var(--warn-tx)':'var(--danger-tx)';}
+    document.getElementById('expl-'+q.id).style.display='block';
+  });
+  const tr=document.getElementById('total-row');tr.style.display='flex';
+  document.getElementById('total-val').textContent=total.toFixed(2)+' / 5';
+  lastTotal=total;lastPer=per;
+}
+function reportFeishu(){
+  if(!done){alert('请先交卷评分再上报');return;}
+  const u=FEISHU_FORM
+    +'?prefill_'+encodeURIComponent('日期')+'='+encodeURIComponent(QUIZ_DATE)
+    +'&prefill_'+encodeURIComponent('主题')+'='+encodeURIComponent(QUIZ_TOPIC)
+    +'&prefill_'+encodeURIComponent('总分')+'='+encodeURIComponent(lastTotal.toFixed(2))
+    +'&prefill_'+encodeURIComponent('各题得分')+'='+encodeURIComponent(lastPer.join(','));
+  if(typeof openLink==='function')openLink(u);else window.open(u,'_blank');
+}
+function doReset(){
+  done=false;
+  Qs.forEach(q=>{
+    q.opts.forEach(o=>{
+      const el=document.getElementById('opt-'+q.id+'-'+o.k),cb=document.getElementById('cb-'+q.id+'-'+o.k);
+      cb.checked=false;cb.disabled=false;el.classList.remove('correct','wrong','missed','locked');
+    });
+    document.getElementById('fb-'+q.id).style.display='none';
+    document.getElementById('expl-'+q.id).style.display='none';
+  });
+  document.getElementById('total-row').style.display='none';
+  document.getElementById('btn-submit').style.display='inline-block';
+  document.getElementById('btn-reset').style.display='none';
+  document.getElementById('btn-report').style.display='none';
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>内科护理学正高每日练习 · 2026-06-14</title>
+<style>
+:root{
+  --bg:#faf9f5;--surface:#ffffff;--surface2:#f1efe8;--text:#1f1e1c;--text2:#5f5e5a;--text3:#888780;
+  --border:rgba(0,0,0,.12);--border2:rgba(0,0,0,.22);
+  --info-bg:#e6f1fb;--info-tx:#0c447c;--ok-bg:#e1f5ee;--ok-tx:#0f6e56;
+  --warn-bg:#faeeda;--warn-tx:#854f0b;--danger-bg:#fcebeb;--danger-tx:#a32d2d;
+  --radius:12px;--radius-s:8px;
+  --font:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#1f1e1c;--surface:#2a2925;--surface2:#33322d;--text:#f5f3ee;--text2:#b4b2a9;--text3:#888780;
+    --border:rgba(255,255,255,.14);--border2:rgba(255,255,255,.26);
+    --info-bg:#0c447c;--info-tx:#b5d4f4;--ok-bg:#085041;--ok-tx:#9fe1cb;
+    --warn-bg:#633806;--warn-tx:#fac775;--danger-bg:#791f1f;--danger-tx:#f7c1c1;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.7;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:1.5rem 1.1rem 4rem}
+.head{margin:0 0 1.5rem}
+.head h1{font-size:20px;font-weight:500;margin:0 0 .3rem}
+.head .sub{font-size:13.5px;color:var(--text2);margin:0}
+.head .topic{display:inline-block;margin-top:.6rem;background:var(--info-bg);color:var(--info-tx);
+  font-size:13px;font-weight:500;padding:5px 12px;border-radius:var(--radius-s)}
+.card{background:var(--surface);border:.5px solid var(--border);border-radius:var(--radius);padding:1.25rem;margin-bottom:1rem}
+.card-tag{font-size:11.5px;font-weight:500;color:var(--text2);letter-spacing:.04em;margin:0 0 1rem;padding-bottom:.75rem;border-bottom:.5px solid var(--border)}
+.case-desc{background:var(--surface2);border-radius:var(--radius-s);padding:1rem 1.1rem;margin-bottom:1.25rem;font-size:13.5px;line-height:1.85}
+.case-desc strong{font-weight:500}
+.q-block{margin-bottom:1.5rem}.q-block:last-child{margin-bottom:0}
+.q-title{font-size:14.5px;font-weight:500;margin:0 0 .6rem;line-height:1.6}
+.q-num{color:var(--text2);font-weight:400}
+.opt{display:flex;align-items:flex-start;gap:9px;padding:7px 9px;border-radius:7px;margin:3px 0;cursor:pointer;font-size:14px;line-height:1.5;transition:background .1s}
+.opt:hover{background:var(--surface2)}
+.opt input{margin-top:3px;flex-shrink:0;width:16px;height:16px;accent-color:#378add}
+.opt.correct{background:var(--ok-bg)!important;color:var(--ok-tx)}
+.opt.wrong{background:var(--danger-bg)!important;color:var(--danger-tx)}
+.opt.missed{background:var(--warn-bg)!important;color:var(--warn-tx)}
+.opt.locked{pointer-events:none;cursor:default}
+.q-fb{font-size:13px;margin-top:6px;font-weight:500;display:none}
+.q-expl{font-size:13px;line-height:1.7;color:var(--text2);background:var(--surface2);border-radius:7px;padding:.75rem;margin-top:.6rem;display:none}
+.total-row{display:none;align-items:center;justify-content:space-between;background:var(--surface2);border-radius:var(--radius-s);padding:1rem 1.25rem;margin-top:.5rem}
+.total-label{font-size:14px;color:var(--text2)}
+.total-val{font-size:28px;font-weight:500}
+.btn-row{display:flex;gap:10px;margin-top:1.25rem}
+.btn-s,.btn-r{cursor:pointer;border-radius:var(--radius-s);font-size:14px;padding:10px 24px;font-weight:500;border:none}
+.btn-s{background:var(--info-bg);color:var(--info-tx)}
+.btn-s:hover{opacity:.85}
+.btn-r{background:none;color:var(--text2);border:.5px solid var(--border2);display:none}
+.btn-r:hover{background:var(--surface2)}
+.foot{text-align:center;font-size:12px;color:var(--text3);margin-top:2rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <h1>内科护理学正高每日练习</h1>
+    <p class="sub">2026-06-14 · 共 5 题（满分 5 分）</p>
+    <span class="topic">今日主题：循环系统——急性心肌梗死护理</span>
+  </div>
+
+  <div class="card">
+    <p class="card-tag">第一部分 · 多选题（共2题 · 每题1分）｜全部选对方得满分，错选/漏选均得0分</p>
+    <div id="q1-wrap" class="q-block"></div>
+    <div id="q2-wrap" class="q-block"></div>
+  </div>
+
+  <div class="card">
+    <p class="card-tag">第二部分 · 案例分析题（共3题 · 每题1分）｜不定项：选对得分，错选倒扣，单题保底0分</p>
+    <div class="case-desc"><strong>【病例】</strong>王某，男，58岁，吸烟史30年，高血压、2型糖尿病各10年，无冠心病史。因突发胸骨后压榨性疼痛伴大汗淋漓、恶心呕吐2小时来院急诊。<br><strong>查体：</strong>P 112次/min，R 22次/min，BP 88/58 mmHg；皮肤湿冷，面色苍白；双肺底少量湿啰音，心音低钝，未闻明显杂音；双下肢无水肿。<br><strong>辅助检查：</strong>ECG示Ⅱ、Ⅲ、aVF导联ST段抬高0.3～0.5 mV，Ⅰ、aVL导联ST段压低；cTnI 9.2 ng/mL（参考值＜0.04 ng/mL）；BNP 1920 pg/mL；床旁超声：左室下壁节段性运动异常，EF 34%。</div>
+    <div id="q3-wrap" class="q-block"></div>
+    <div id="q4-wrap" class="q-block"></div>
+    <div id="q5-wrap" class="q-block"></div>
+  </div>
+
+  <div class="btn-row">
+    <button class="btn-s" id="btn-submit" onclick="doSubmit()">交卷评分</button>
+    <button class="btn-r" id="btn-report" onclick="reportFeishu()" style="display:none">上报成绩到飞书</button>
+    <button class="btn-r" id="btn-reset" onclick="doReset()">重做</button>
+  </div>
+  <div class="total-row" id="total-row">
+    <span class="total-label">本次总分</span>
+    <span class="total-val" id="total-val"></span>
+  </div>
+  <p class="foot">人民卫生出版社《内科护理学》及现行指南 · 每日自动生成</p>
+</div>
+
+<script>
+const Qs=[
+  {
+    "id": 1,
+    "type": "multi",
+    "num": "1",
+    "title": "关于急性心肌梗死（AMI）的护理评估，正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "典型症状为持续性胸骨后压榨性胸痛≥30分钟，硝酸甘油不能完全缓解，可放射至左肩、左臂内侧或下颌"
+      },
+      {
+        "k": "B",
+        "t": "老年人及糖尿病患者AMI可表现为无痛性心肌梗死，仅有乏力、恶心、晕厥等非特异性症状"
+      },
+      {
+        "k": "C",
+        "t": "首份ECG出现病理性Q波是STEMI的必要诊断条件，无Q波即可排除AMI"
+      },
+      {
+        "k": "D",
+        "t": "肌钙蛋白（cTnI/cTnT）在AMI后3～4小时开始升高、10～24小时达峰，是目前敏感性和特异性最高的心肌损伤标志物"
+      },
+      {
+        "k": "E",
+        "t": "疑似AMI患者应在首次医疗接触（FMC）10分钟内完成12导联ECG并由医生解读"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "expl": "A正确：胸痛持续≥30分钟、不能被硝酸甘油缓解，是AMI与心绞痛鉴别的重要临床特征；B正确：糖尿病神经病变及老年人痛阈升高导致无痛性心梗，须高度警惕；D正确：高敏肌钙蛋白（hs-cTn）是AMI诊断的核心标志物，高于正常上限99百分位即有意义；E正确：10分钟内完成ECG是STEMI救治时间链的关键节点；C错误：NSTEMI早期ECG可无病理性Q波（仅ST压低或T波倒置），且首份ECG正常不排除AMI，应动态复查。"
+  },
+  {
+    "id": 2,
+    "type": "multi",
+    "num": "2",
+    "title": "STEMI患者行急诊经皮冠状动脉介入治疗（PCI）的护理要点，正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "术前遵医嘱给予双联抗血小板治疗负荷剂量（阿司匹林300 mg嚼服＋替格瑞洛180 mg或氯吡格雷600 mg口服）"
+      },
+      {
+        "k": "B",
+        "t": "股动脉穿刺侧肢体须制动6～8小时，定期观察足背动脉搏动、皮温及色泽，防止下肢缺血或血栓"
+      },
+      {
+        "k": "C",
+        "t": "桡动脉途径术后用桡动脉压迫器压迫止血，一般2～4小时后在医生指导下逐步减压"
+      },
+      {
+        "k": "D",
+        "t": "术后无需监测心电图，只需观察穿刺部位出血情况，稳定后即可出院"
+      },
+      {
+        "k": "E",
+        "t": "术后警惕支架内血栓形成的征象：突发剧烈胸痛、ST段再抬高、血压骤降，立即通知医生处理"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "expl": "A正确：DAPT负荷剂量是急诊PCI术前的标准用药，替格瑞洛或氯吡格雷任选其一；B正确：股动脉穿刺后下肢制动及肢端血运观察是常规护理，防止血肿、假性动脉瘤及下肢缺血；C正确：桡动脉途径压迫时间较股动脉短，逐步减压可降低穿刺部位并发症；E正确：急性支架内血栓是PCI术后最危险的并发症，死亡率极高，须严密监测；D错误：PCI术后需至少24小时心电监护，监测再灌注心律失常、ST段变化、造影剂肾病等，不应提前出院。"
+  },
+  {
+    "id": 3,
+    "type": "case",
+    "num": "3",
+    "title": "根据该患者的临床资料，最可能的诊断及其依据正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "急性下壁STEMI合并心源性休克：Ⅱ、Ⅲ、aVF导联ST抬高（下壁）＋低血压、皮肤湿冷、EF降低（34%）"
+      },
+      {
+        "k": "B",
+        "t": "急性前壁STEMI：V₁～V₅导联ST段抬高为诊断依据"
+      },
+      {
+        "k": "C",
+        "t": "急性肺栓塞：突发胸痛＋低血压，ECG可出现SIQⅢTⅢ改变"
+      },
+      {
+        "k": "D",
+        "t": "不稳定型心绞痛：胸痛持续2小时，cTnI明显升高，不排除此诊断"
+      },
+      {
+        "k": "E",
+        "t": "该患者BNP 1920 pg/mL显著升高，提示存在急性心力衰竭，心源性休克诊断成立"
+      }
+    ],
+    "correct": [
+      "A",
+      "E"
+    ],
+    "expl": "A正确：Ⅱ、Ⅲ、aVF导联ST段抬高为下壁AMI特征性改变（对应右冠状动脉或左回旋支供血区）；低血压（BP 88/58 mmHg）＋皮肤湿冷＋EF 34%（严重收缩功能障碍）符合心源性休克诊断；E正确：BNP极度升高反映心室壁应力增大，与EF降低和急性心衰一致，支持心源性休克；B错误：该患者ECG改变在下壁导联，非前壁；C错误：急性肺栓塞虽可有低血压，但ECG通常表现为SIQⅢTⅢ、右束支传导阻滞等右心负荷增加改变，与本例不符，且超声无右心扩大描述；D错误：cTnI 9.2 ng/mL（正常值＜0.04）明显升高＋持续2小时胸痛，已超出不稳定型心绞痛范畴（UA不应有cTn显著升高）。"
+  },
+  {
+    "id": 4,
+    "type": "case",
+    "num": "4",
+    "title": "确诊后须立即采取的护理措施包括",
+    "opts": [
+      {
+        "k": "A",
+        "t": "绝对卧床休息，持续心电监护＋血压监测，除颤仪处于备用状态（充好电），识别恶性心律失常"
+      },
+      {
+        "k": "B",
+        "t": "遵医嘱给予阿司匹林300 mg嚼服、替格瑞洛180 mg口服，并迅速建立静脉通路"
+      },
+      {
+        "k": "C",
+        "t": "向患者说明用力排便无关紧要，只需保持正常排便即可，无需特殊处理"
+      },
+      {
+        "k": "D",
+        "t": "遵医嘱通知导管室，目标首次医疗接触至球囊扩张（FMC-to-balloon）时间≤90分钟，准备快速转运"
+      },
+      {
+        "k": "E",
+        "t": "在等待PCI期间，给予鼻导管吸氧（目标SpO₂≥94%），适当镇痛（如吗啡2～4 mg静脉给予，注意血压及呼吸）"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "expl": "A正确：STEMI高危心律失常（室颤/室速）多发生于发病早期，须持续监护备除颤仪；B正确：DAPT（双联抗血小板）是STEMI再灌注治疗的基础，尽早给予；D正确：FMC-to-balloon≤90分钟是STEMI救治的关键时间目标（指南IB类推荐），护士须积极配合缩短院内各环节延误；E正确：吗啡可镇痛减少心肌耗氧，但须谨慎（可能掩盖症状、降低P2Y12抑制剂吸收），用时监测血压和呼吸；C错误：排便用力（Valsalva动作）可急剧增加心脏后负荷、诱发心律失常甚至猝死，应遵医嘱予缓泻剂，绝对避免屏气用力。"
+  },
+  {
+    "id": 5,
+    "type": "case",
+    "num": "5",
+    "title": "急诊PCI术后2小时（CCU内），患者突然出现心率30次/min，血压72/46 mmHg，ECG示Ⅲ度房室传导阻滞（完全性AVB），意识模糊，护士首要且正确的处理包括",
+    "opts": [
+      {
+        "k": "A",
+        "t": "立即通知医生，同时持续监测生命体征，维持或建立可靠的静脉通路，备好抢救药物"
+      },
+      {
+        "k": "B",
+        "t": "遵医嘱静脉推注阿托品0.5～1 mg，必要时每3～5分钟重复，总量不超过3 mg"
+      },
+      {
+        "k": "C",
+        "t": "协助医生准备经皮体外临时起搏或经静脉临时起搏器，做好设备和材料准备"
+      },
+      {
+        "k": "D",
+        "t": "若患者出现无脉，立即启动CPR并呼叫团队，开始高质量心肺复苏"
+      },
+      {
+        "k": "E",
+        "t": "等待心内科会诊意见，会诊到达前不要擅自处理，以免越权引起纠纷"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "expl": "下壁AMI（右冠状动脉病变）合并Ⅲ度AVB（完全性）伴血流动力学不稳定属于需立即干预的急症；A正确：通知医生＋维持静脉通路＋备药是护士的首要急救职责；B正确：阿托品（迷走神经拮抗剂）是症状性心动过缓和AVB的一线药物，配合医嘱谨慎给予；C正确：药物无效时须立即实施临时起搏（首选经皮，之后尽快经静脉），护士须提前备好器材；D正确：若演变为无脉电活动/心搏骤停须立即CPR；E错误：血流动力学不稳定的完全性AVB属于致命急症，护士有责任在医生到达前立即给予紧急处理，等待会诊将延误抢救时机，可能造成不可逆后果。"
+  }
+];
+const QUIZ_DATE="2026-06-14";
+const QUIZ_TOPIC="循环系统——急性心肌梗死护理";
+const FEISHU_FORM="https://dcnn82x31z7p.feishu.cn/share/base/form/shrcnBdV2GxPDcMoLoU3dupXsDb";
+let lastTotal=0, lastPer=[];
+
+function renderQ(q,wrapId){
+  const wrap=document.getElementById(wrapId);
+  let h=`<p class="q-title"><span class="q-num">${q.num}. </span>${q.title}</p>`;
+  q.opts.forEach(o=>{
+    h+=`<label class="opt" id="opt-${q.id}-${o.k}"><input type="checkbox" id="cb-${q.id}-${o.k}" value="${o.k}"><span><strong>${o.k}.</strong> ${o.t}</span></label>`;
+  });
+  h+=`<div class="q-fb" id="fb-${q.id}"></div><div class="q-expl" id="expl-${q.id}">【解析】${q.expl}</div>`;
+  wrap.innerHTML=h;
+}
+const wraps=['q1-wrap','q2-wrap','q3-wrap','q4-wrap','q5-wrap'];
+Qs.forEach((q,i)=>renderQ(q,wraps[i]));
+let done=false;
+function getSel(qid){return Qs.find(q=>q.id===qid).opts.filter(o=>document.getElementById('cb-'+qid+'-'+o.k).checked).map(o=>o.k);}
+function doSubmit(){
+  if(done)return;done=true;
+  document.getElementById('btn-submit').style.display='none';
+  document.getElementById('btn-reset').style.display='inline-block';
+  document.getElementById('btn-report').style.display='inline-block';
+  let total=0;const per=[];
+  Qs.forEach(q=>{
+    const sel=getSel(q.id),cor=q.correct;let qScore;
+    if(q.type==='multi'){const allRight=cor.every(k=>sel.includes(k))&&sel.every(k=>cor.includes(k));qScore=allRight?1:0;}
+    else{if(sel.length===0){qScore=0;}else{const w=1/cor.length;let s=0;sel.forEach(k=>{if(cor.includes(k))s+=w;else s-=w;});qScore=Math.max(0,s);}}
+    total+=qScore;per.push(Math.round(qScore*100)/100);
+    q.opts.forEach(o=>{
+      const el=document.getElementById('opt-'+q.id+'-'+o.k),cb=document.getElementById('cb-'+q.id+'-'+o.k);
+      cb.disabled=true;el.classList.add('locked');
+      const isCor=cor.includes(o.k),isSel=sel.includes(o.k);
+      if(isSel&&isCor)el.classList.add('correct');else if(isSel&&!isCor)el.classList.add('wrong');else if(!isSel&&isCor)el.classList.add('missed');
+    });
+    const fb=document.getElementById('fb-'+q.id);fb.style.display='block';
+    if(q.type==='multi'){fb.textContent=qScore===1?'✓ 得分 1 / 1':'✗ 得分 0 / 1（须全部选对）';fb.style.color=qScore===1?'var(--ok-tx)':'var(--danger-tx)';}
+    else{const disp=qScore.toFixed(2);fb.textContent=`得分 ${disp} / 1`;fb.style.color=qScore>=0.999?'var(--ok-tx)':qScore>0?'var(--warn-tx)':'var(--danger-tx)';}
+    document.getElementById('expl-'+q.id).style.display='block';
+  });
+  const tr=document.getElementById('total-row');tr.style.display='flex';
+  document.getElementById('total-val').textContent=total.toFixed(2)+' / 5';
+  lastTotal=total;lastPer=per;
+}
+function reportFeishu(){
+  if(!done){alert('请先交卷评分再上报');return;}
+  const u=FEISHU_FORM
+    +'?prefill_'+encodeURIComponent('日期')+'='+encodeURIComponent(QUIZ_DATE)
+    +'&prefill_'+encodeURIComponent('主题')+'='+encodeURIComponent(QUIZ_TOPIC)
+    +'&prefill_'+encodeURIComponent('总分')+'='+encodeURIComponent(lastTotal.toFixed(2))
+    +'&prefill_'+encodeURIComponent('各题得分')+'='+encodeURIComponent(lastPer.join(','));
+  if(typeof openLink==='function')openLink(u);else window.open(u,'_blank');
+}
+function doReset(){
+  done=false;
+  Qs.forEach(q=>{
+    q.opts.forEach(o=>{
+      const el=document.getElementById('opt-'+q.id+'-'+o.k),cb=document.getElementById('cb-'+q.id+'-'+o.k);
+      cb.checked=false;cb.disabled=false;el.classList.remove('correct','wrong','missed','locked');
+    });
+    document.getElementById('fb-'+q.id).style.display='none';
+    document.getElementById('expl-'+q.id).style.display='none';
+  });
+  document.getElementById('total-row').style.display='none';
+  document.getElementById('btn-submit').style.display='inline-block';
+  document.getElementById('btn-reset').style.display='none';
+  document.getElementById('btn-report').style.display='none';
+}
+</script>
+</body>
+</html>
