@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>内科护理学正高每日练习 · 2026-06-14</title>
+<style>
+:root{
+  --bg:#faf9f5;--surface:#ffffff;--surface2:#f1efe8;--text:#1f1e1c;--text2:#5f5e5a;--text3:#888780;
+  --border:rgba(0,0,0,.12);--border2:rgba(0,0,0,.22);
+  --info-bg:#e6f1fb;--info-tx:#0c447c;--ok-bg:#e1f5ee;--ok-tx:#0f6e56;
+  --warn-bg:#faeeda;--warn-tx:#854f0b;--danger-bg:#fcebeb;--danger-tx:#a32d2d;
+  --radius:12px;--radius-s:8px;
+  --font:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#1f1e1c;--surface:#2a2925;--surface2:#33322d;--text:#f5f3ee;--text2:#b4b2a9;--text3:#888780;
+    --border:rgba(255,255,255,.14);--border2:rgba(255,255,255,.26);
+    --info-bg:#0c447c;--info-tx:#b5d4f4;--ok-bg:#085041;--ok-tx:#9fe1cb;
+    --warn-bg:#633806;--warn-tx:#fac775;--danger-bg:#791f1f;--danger-tx:#f7c1c1;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.7;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:1.5rem 1.1rem 4rem}
+.head{margin:0 0 1.5rem}
+.head h1{font-size:20px;font-weight:500;margin:0 0 .3rem}
+.head .sub{font-size:13.5px;color:var(--text2);margin:0}
+.head .topic{display:inline-block;margin-top:.6rem;background:var(--info-bg);color:var(--info-tx);
+  font-size:13px;font-weight:500;padding:5px 12px;border-radius:var(--radius-s)}
+.card{background:var(--surface);border:.5px solid var(--border);border-radius:var(--radius);padding:1.25rem;margin-bottom:1rem}
+.card-tag{font-size:11.5px;font-weight:500;color:var(--text2);letter-spacing:.04em;margin:0 0 1rem;padding-bottom:.75rem;border-bottom:.5px solid var(--border)}
+.case-desc{background:var(--surface2);border-radius:var(--radius-s);padding:1rem 1.1rem;margin-bottom:1.25rem;font-size:13.5px;line-height:1.85}
+.case-desc strong{font-weight:500}
+.q-block{margin-bottom:1.5rem}.q-block:last-child{margin-bottom:0}
+.q-title{font-size:14.5px;font-weight:500;margin:0 0 .6rem;line-height:1.6}
+.q-num{color:var(--text2);font-weight:400}
+.opt{display:flex;align-items:flex-start;gap:9px;padding:7px 9px;border-radius:7px;margin:3px 0;cursor:pointer;font-size:14px;line-height:1.5;transition:background .1s}
+.opt:hover{background:var(--surface2)}
+.opt input{margin-top:3px;flex-shrink:0;width:16px;height:16px;accent-color:#378add}
+.opt.correct{background:var(--ok-bg)!important;color:var(--ok-tx)}
+.opt.wrong{background:var(--danger-bg)!important;color:var(--danger-tx)}
+.opt.missed{background:var(--warn-bg)!important;color:var(--warn-tx)}
+.opt.locked{pointer-events:none;cursor:default}
+.q-fb{font-size:13px;margin-top:6px;font-weight:500;display:none}
+.q-expl{font-size:13px;line-height:1.7;color:var(--text2);background:var(--surface2);border-radius:7px;padding:.75rem;margin-top:.6rem;display:none}
+.total-row{display:none;align-items:center;justify-content:space-between;background:var(--surface2);border-radius:var(--radius-s);padding:1rem 1.25rem;margin-top:.5rem}
+.total-label{font-size:14px;color:var(--text2)}
+.total-val{font-size:28px;font-weight:500}
+.btn-row{display:flex;gap:10px;margin-top:1.25rem}
+.btn-s,.btn-r{cursor:pointer;border-radius:var(--radius-s);font-size:14px;padding:10px 24px;font-weight:500;border:none}
+.btn-s{background:var(--info-bg);color:var(--info-tx)}
+.btn-s:hover{opacity:.85}
+.btn-r{background:none;color:var(--text2);border:.5px solid var(--border2);display:none}
+.btn-r:hover{background:var(--surface2)}
+.foot{text-align:center;font-size:12px;color:var(--text3);margin-top:2rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <h1>内科护理学正高每日练习</h1>
+    <p class="sub">2026-06-14 · 共 5 题（满分 5 分）</p>
+    <span class="topic">今日主题：泌尿/内分泌——糖尿病酮症酸中毒（DKA）护理</span>
+  </div>
+
+  <div class="card">
+    <p class="card-tag">第一部分 · 多选题（共2题 · 每题1分）｜全部选对方得满分，错选/漏选均得0分</p>
+    <div id="q1-wrap" class="q-block"></div>
+    <div id="q2-wrap" class="q-block"></div>
+  </div>
+
+  <div class="card">
+    <p class="card-tag">第二部分 · 案例分析题（共3题 · 每题1分）｜不定项：选对得分，错选倒扣，单题保底0分</p>
+    <div class="case-desc"><strong>【病例】</strong>女，47岁，1型糖尿病病史15年，因"恶心呕吐3天、意识模糊6小时"急诊入院。<br><strong>病史：</strong>3天前因急性上呼吸道感染后自行减少胰岛素用量，此后逐渐出现恶心、呕吐、多尿、口渴加剧。6小时前家属发现其出现意识模糊，呼之不应加重，急诊就诊。<br><strong>查体：</strong>T 37.2℃，BP 88/58 mmHg，HR 118次/min，R 26次/min；神志模糊，呼气有明显烂苹果气味，皮肤干燥弹性差，眼球凹陷，口唇干裂；双肺呼吸音清，腹软无压痛。<br><strong>辅助检查：</strong>末梢血糖 32.6 mmol/L；动脉血气 pH 7.18，PaCO₂ 22 mmHg，HCO₃⁻ 8 mmol/L；Na⁺ 128 mmol/L，K⁺ 3.2 mmol/L；血酮 4.8 mmol/L，尿酮（+++）；BUN 12.3 mmol/L，Cr 168 μmol/L；WBC 16.2×10⁹/L，中性粒细胞92%。</div>
+    <div id="q3-wrap" class="q-block"></div>
+    <div id="q4-wrap" class="q-block"></div>
+    <div id="q5-wrap" class="q-block"></div>
+  </div>
+
+  <div class="btn-row">
+    <button class="btn-s" id="btn-submit" onclick="doSubmit()">交卷评分</button>
+    <button class="btn-r" id="btn-report" onclick="reportFeishu()" style="display:none">上报成绩到飞书</button>
+    <button class="btn-r" id="btn-reset" onclick="doReset()">重做</button>
+  </div>
+  <div class="total-row" id="total-row">
+    <span class="total-label">本次总分</span>
+    <span class="total-val" id="total-val"></span>
+  </div>
+  <p class="foot">人民卫生出版社《内科护理学》及现行指南 · 每日自动生成</p>
+</div>
+
+<script>
+const Qs=[
+  {
+    "id": 1,
+    "type": "multi",
+    "num": "1",
+    "title": "关于糖尿病酮症酸中毒（DKA）的诊断要点，正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "血糖通常>13.9 mmol/L；极少数正常血糖型DKA可见于妊娠期或近期已用胰岛素者"
+      },
+      {
+        "k": "B",
+        "t": "动脉血pH<7.30，血清HCO₃⁻<18 mmol/L为诊断的必要条件"
+      },
+      {
+        "k": "C",
+        "t": "血酮≥3 mmol/L或尿酮体阳性，是酮症的关键诊断依据"
+      },
+      {
+        "k": "D",
+        "t": "DKA时体内总钾量一般增多，无需监测血钾，更无需补钾"
+      },
+      {
+        "k": "E",
+        "t": "呼气出现烂苹果气味（丙酮挥发所致），是DKA特征性临床表现"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "expl": "A正确：DKA典型血糖>13.9 mmol/L（妊娠/近期胰岛素使用可见正常血糖型DKA）；B正确：pH<7.30且HCO₃⁻<18 mmol/L为DKA酸中毒的代谢标志；C正确：血酮≥3 mmol/L或尿酮（+）~（+++）是酮症关键依据；D错误：DKA时体内总钾量因多尿、呕吐、摄入减少而明显丢失，治疗中胰岛素使钾移入细胞内后极易出现严重低钾，必须监测并适时补钾；E正确：酮体之一丙酮有挥发性，经肺排出呈烂苹果气味，是DKA特征性体征。"
+  },
+  {
+    "id": 2,
+    "type": "multi",
+    "num": "2",
+    "title": "下列关于DKA急救护理措施，正确的是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "立即开放静脉通路，首选0.9%氯化钠溶液快速补液，纠正脱水与低血压"
+      },
+      {
+        "k": "B",
+        "t": "持续静脉泵注小剂量胰岛素[0.1 U/(kg·h)]，要求血糖每小时下降4~6 mmol/L为宜"
+      },
+      {
+        "k": "C",
+        "t": "当血糖降至≤13.9 mmol/L时，改输5%葡萄糖溶液（胰岛素:葡萄糖≈1 U:4 g），同时减慢胰岛素速率"
+      },
+      {
+        "k": "D",
+        "t": "一旦诊断DKA，无论血钾高低均立即快速静脉补钾（速率≥20 mmol/h）"
+      },
+      {
+        "k": "E",
+        "t": "补钾指征：尿量≥40 mL/h且血K⁺<5.5 mmol/L，每500 mL液中加KCl 1~1.5 g缓慢补钾"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "expl": "A正确：DKA通常脱水3~5 L，0.9%NaCl为首选，快速扩容纠正循环不足；B正确：小剂量胰岛素[0.1 U/(kg·h)]静脉泵注为标准方案，血糖下降过快（>6 mmol/h）可致脑水肿；C正确：血糖≤13.9 mmol/L时改葡萄糖液并按比例加胰岛素，避免低血糖同时继续消除酮体；D错误：血K⁺≥5.5 mmol/L时暂缓补钾，补钾速率通常≤20 mmol/h（即≤1.5 g/h KCl），过快可致高钾血症和心律失常；E正确：尿量≥40 mL/h（肾功能允许排钾）且血钾<5.5 mmol/L时可安全补钾，是规范补钾指征。"
+  },
+  {
+    "id": 3,
+    "type": "case",
+    "num": "3",
+    "title": "根据上述临床资料，该患者最可能的诊断及DKA严重程度分级是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "轻度DKA（仅酮症，无明显酸中毒，意识清楚）"
+      },
+      {
+        "k": "B",
+        "t": "中度DKA（pH 7.20~7.30，意识基本清楚或轻度嗜睡）"
+      },
+      {
+        "k": "C",
+        "t": "重度DKA（pH<7.20，伴明显意识障碍）"
+      },
+      {
+        "k": "D",
+        "t": "高血糖高渗综合征（HHS）"
+      },
+      {
+        "k": "E",
+        "t": "低血糖昏迷"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "expl": "该患者pH 7.18（<7.20）、HCO₃⁻ 8 mmol/L（<10 mmol/L），血酮4.8 mmol/L，尿酮（+++），血糖32.6 mmol/L，且伴有意识模糊。按国内教材分级：轻度仅酮症（pH正常）；中度pH 7.20~7.30；重度pH<7.20且伴意识障碍——本例符合重度DKA（C正确）。HHS（D）特征为血糖极度升高（≥33.3 mmol/L）、血浆渗透压≥320 mOsm/L、酮症不明显，本例酮症突出不符合；低血糖昏迷（E）血糖明显不符。"
+  },
+  {
+    "id": 4,
+    "type": "case",
+    "num": "4",
+    "title": "患者入院后护士应立即实施的护理措施包括",
+    "opts": [
+      {
+        "k": "A",
+        "t": "开放两条静脉通路，快速输注0.9%氯化钠溶液以纠正脱水和低血压"
+      },
+      {
+        "k": "B",
+        "t": "立即皮下注射速效胰岛素10 U以快速降低血糖"
+      },
+      {
+        "k": "C",
+        "t": "持续心电监护及SpO₂监测，每小时监测血糖、血酮和血清电解质"
+      },
+      {
+        "k": "D",
+        "t": "取俯卧位并拍背以防止呕吐物误吸"
+      },
+      {
+        "k": "E",
+        "t": "留置导尿管，记录每小时尿量以评估肾灌注和补液效果"
+      }
+    ],
+    "correct": [
+      "A",
+      "C",
+      "E"
+    ],
+    "expl": "A正确：重度DKA休克状态须快速静脉补液，两条通路保证液体输入速度；B错误：重度DKA急救应持续静脉泵注小剂量胰岛素[0.1 U/(kg·h)]，皮下注射吸收不稳定、不能精确调控，且意识障碍患者循环差、皮下吸收更差；C正确：心电监护监测心律失常（尤其低钾），每小时血糖和电解质是调整治疗方案的依据；D错误：意识障碍患者应取平卧位头偏向一侧或侧卧位，以防误吸，俯卧位不适合，且有气道管理困难的风险；E正确：每小时尿量是评估血容量补充是否充分和肾功能的关键指标，同时为补钾提供依据。"
+  },
+  {
+    "id": 5,
+    "type": "case",
+    "num": "5",
+    "title": "补液及胰岛素治疗2小时后，患者腹胀、肠鸣音减弱、四肢无力，心电图示T波低平伴明显U波，复查血K⁺ 2.8 mmol/L。此时最正确的护理处置是",
+    "opts": [
+      {
+        "k": "A",
+        "t": "立即停用胰岛素泵，等待血钾纠正至正常后再恢复"
+      },
+      {
+        "k": "B",
+        "t": "遵医嘱适当减慢胰岛素泵速，同时开始静脉补钾，每小时KCl≤1.5 g（≤20 mmol/h）"
+      },
+      {
+        "k": "C",
+        "t": "监测每小时尿量，确保≥40 mL/h，防止补钾过快引发高钾血症"
+      },
+      {
+        "k": "D",
+        "t": "仅口服补钾（如橙汁、香蕉），避免静脉补钾引起静脉炎"
+      },
+      {
+        "k": "E",
+        "t": "持续心电监护，密切观察T波、U波及QT间期变化，及时识别低钾相关恶性心律失常"
+      }
+    ],
+    "correct": [
+      "B",
+      "C",
+      "E"
+    ],
+    "expl": "B正确：血K⁺ 2.8 mmol/L为低钾血症，胰岛素加速K⁺内移故应减慢胰岛素速率，同时静脉补钾；补钾速率每小时不超过1.5 g KCl（约20 mmol）是安全上限，以防高钾性心律失常；C正确：补钾须尿量≥40 mL/h以保证肾能排钾，防止快速大量补钾导致高钾；D错误：意识模糊患者禁止口服（误吸风险），且口服补钾速度远不能满足静脉补液中同时进行的快速纠酸治疗；E正确：低钾血症心电图改变（T波低平、U波出现、QT延长）提示室颤风险升高，持续心电监护是必须的监测手段。停用胰岛素（A）不正确，胰岛素治疗须持续以消除酮体，低钾时减慢速率而非停用。"
+  }
+];
+const QUIZ_DATE="2026-06-14";
+const QUIZ_TOPIC="泌尿/内分泌——糖尿病酮症酸中毒（DKA）护理";
+const FEISHU_FORM="https://dcnn82x31z7p.feishu.cn/share/base/form/shrcnBdV2GxPDcMoLoU3dupXsDb";
+let lastTotal=0, lastPer=[];
+
+function renderQ(q,wrapId){
+  const wrap=document.getElementById(wrapId);
+  let h=`<p class="q-title"><span class="q-num">${q.num}. </span>${q.title}</p>`;
+  q.opts.forEach(o=>{
+    h+=`<label class="opt" id="opt-${q.id}-${o.k}"><input type="checkbox" id="cb-${q.id}-${o.k}" value="${o.k}"><span><strong>${o.k}.</strong> ${o.t}</span></label>`;
+  });
+  h+=`<div class="q-fb" id="fb-${q.id}"></div><div class="q-expl" id="expl-${q.id}">【解析】${q.expl}</div>`;
+  wrap.innerHTML=h;
+}
+const wraps=['q1-wrap','q2-wrap','q3-wrap','q4-wrap','q5-wrap'];
+Qs.forEach((q,i)=>renderQ(q,wraps[i]));
+let done=false;
+function getSel(qid){return Qs.find(q=>q.id===qid).opts.filter(o=>document.getElementById('cb-'+qid+'-'+o.k).checked).map(o=>o.k);}
+function doSubmit(){
+  if(done)return;done=true;
+  document.getElementById('btn-submit').style.display='none';
+  document.getElementById('btn-reset').style.display='inline-block';
+  document.getElementById('btn-report').style.display='inline-block';
+  let total=0;const per=[];
+  Qs.forEach(q=>{
+    const sel=getSel(q.id),cor=q.correct;let qScore;
+    if(q.type==='multi'){const allRight=cor.every(k=>sel.includes(k))&&sel.every(k=>cor.includes(k));qScore=allRight?1:0;}
+    else{if(sel.length===0){qScore=0;}else{const w=1/cor.length;let s=0;sel.forEach(k=>{if(cor.includes(k))s+=w;else s-=w;});qScore=Math.max(0,s);}}
+    total+=qScore;per.push(Math.round(qScore*100)/100);
+    q.opts.forEach(o=>{
+      const el=document.getElementById('opt-'+q.id+'-'+o.k),cb=document.getElementById('cb-'+q.id+'-'+o.k);
+      cb.disabled=true;el.classList.add('locked');
+      const isCor=cor.includes(o.k),isSel=sel.includes(o.k);
+      if(isSel&&isCor)el.classList.add('correct');else if(isSel&&!isCor)el.classList.add('wrong');else if(!isSel&&isCor)el.classList.add('missed');
+    });
+    const fb=document.getElementById('fb-'+q.id);fb.style.display='block';
+    if(q.type==='multi'){fb.textContent=qScore===1?'✓ 得分 1 / 1':'✗ 得分 0 / 1（须全部选对）';fb.style.color=qScore===1?'var(--ok-tx)':'var(--danger-tx)';}
+    else{const disp=qScore.toFixed(2);fb.textContent=`得分 ${disp} / 1`;fb.style.color=qScore>=0.999?'var(--ok-tx)':qScore>0?'var(--warn-tx)':'var(--danger-tx)';}
+    document.getElementById('expl-'+q.id).style.display='block';
+  });
+  const tr=document.getElementById('total-row');tr.style.display='flex';
+  document.getElementById('total-val').textContent=total.toFixed(2)+' / 5';
+  lastTotal=total;lastPer=per;
+}
+function reportFeishu(){
+  if(!done){alert('请先交卷评分再上报');return;}
+  const u=FEISHU_FORM
+    +'?prefill_'+encodeURIComponent('日期')+'='+encodeURIComponent(QUIZ_DATE)
+    +'&prefill_'+encodeURIComponent('主题')+'='+encodeURIComponent(QUIZ_TOPIC)
+    +'&prefill_'+encodeURIComponent('总分')+'='+encodeURIComponent(lastTotal.toFixed(2))
+    +'&prefill_'+encodeURIComponent('各题得分')+'='+encodeURIComponent(lastPer.join(','));
+  if(typeof openLink==='function')openLink(u);else window.open(u,'_blank');
+}
+function doReset(){
+  done=false;
+  Qs.forEach(q=>{
+    q.opts.forEach(o=>{
+      const el=document.getElementById('opt-'+q.id+'-'+o.k),cb=document.getElementById('cb-'+q.id+'-'+o.k);
+      cb.checked=false;cb.disabled=false;el.classList.remove('correct','wrong','missed','locked');
+    });
+    document.getElementById('fb-'+q.id).style.display='none';
+    document.getElementById('expl-'+q.id).style.display='none';
+  });
+  document.getElementById('total-row').style.display='none';
+  document.getElementById('btn-submit').style.display='inline-block';
+  document.getElementById('btn-reset').style.display='none';
+  document.getElementById('btn-report').style.display='none';
+}
+</script>
+</body>
+</html>
